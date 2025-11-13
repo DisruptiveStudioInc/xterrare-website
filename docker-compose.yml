@@ -1,0 +1,13 @@
+services:
+  xterrare-website:
+    image: trafex/php-nginx
+    container_name: xterrare-website
+    restart: unless-stopped
+    volumes:
+    - $PWD:/var/www/html
+    ports:
+    - "5106:8080"
+    networks:
+    - xterrare-network
+networks:
+  xterrare-network:
