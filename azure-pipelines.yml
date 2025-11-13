@@ -1,0 +1,17 @@
+trigger:
+- main
+
+pool:
+  name: Disruptive
+
+steps:
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'creative-ovh'
+    runOptions: 'inline'
+    inline: |
+      cd /var/www/$(Build.Repository.Name)
+      sudo git reset --hard
+      sudo git pull
+    readyTimeout: '20000'
+  continueOnError: true
