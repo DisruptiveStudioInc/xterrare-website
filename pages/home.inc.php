@@ -10,7 +10,7 @@
       <img class="background visible" src="./images/body/letters/2.webp" alt="Placeholder" />
     </div>
 
-    <div class="video-iframe-wrapper d-none">
+    <div class="video-iframe-wrapper">
       <iframe
         src="https://player.vimeo.com/video/<?= $Video_vimeo; ?>?background=1&autoplay=1&muted=1&loop=1"
         frameborder="0"

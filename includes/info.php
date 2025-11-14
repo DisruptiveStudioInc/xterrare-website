@@ -82,7 +82,7 @@ $ref = isset($user_replica) ? "?ref=$user_replica" : '';
 // VIDEO VIMEO
 //-------------------------//
 
-$Video_vimeo = "1112334525";
+$Video_vimeo = "1136718039";
 
 //-------------------------//
 // MENU
@@ -111,7 +111,7 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 // CONTACT
 //-------------------------//
 
-$Email = "cryn@gmail.com";
+$Email = "info@xterrare.com";
 // $Schedule = "Mon-Fri: 9 am– 6 pm<br>Saturday: 9 am – 2pm<br>Sunday: Closed";
 // $Phone = "(888) 456 7890";
 // $Address = "Blvd. Kukulcan 1,<br>Puerto Juarez,<br>Zona Hotelera,<br>77500 Cancún, Q.R. México";
