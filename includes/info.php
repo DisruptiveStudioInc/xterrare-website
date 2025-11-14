@@ -22,15 +22,15 @@ $Company_Fullname = "$Company_Name GLOBAL";
 
 $Investments = array(
   'bronze' => [
-    'area' => 140,
+    'area' => 160,
     'amount' => 250
   ],
   'silver' => [
-    'area' => 180,
+    'area' => 200,
     'amount' => 550
   ],
   'gold' => [
-    'area' => 200,
+    'area' => 220,
     'amount' => 1500
   ],
   'diamond' => [
