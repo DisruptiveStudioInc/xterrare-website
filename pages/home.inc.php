@@ -99,7 +99,7 @@
 <!-- TWO -->
 <!-- ============================================== -->
 
-<section class="rel c-b-dark">
+<section class="rel c-pri">
 
 	<div class="h-100 vertical-slides rel of-h small-h-0 letters" style="--total-items:4">
     <div class="section-arrows">

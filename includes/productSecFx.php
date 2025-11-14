@@ -20,7 +20,7 @@
     </div>
 
     <?php foreach($homeProducts as $item): ?>
-      <div data-bg="img_product_<?= $item['link']; ?>" class="box_product rel flex ai-center jc-center fd-col img-<?= $item['number'] ?>" style="z-index:<?= count($homeProducts); ?>">
+      <div data-bg="img_product_<?= $item['link']; ?>" class="box_product rel flex ai-center jc-center fd-col img-<?= $item['number'] ?>" style="--bg-product:url(./../../images/body/subpage/<?= $item['background']; ?>);z-index:<?= count($homeProducts); ?>;">
         <div class="rel t-c">
           <img src="./images/body/products/<?= $item['image']; ?>" class="product m-center cursor-pointer" alt="<?= $item['link']; ?>" onclick="openModal('Modal<?= $item['id']; ?>')"/>
           <div class="abs product-plus-wrap d-flex fd-col ai-center g-20 pointer-e-none">

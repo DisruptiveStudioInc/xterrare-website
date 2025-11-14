@@ -773,7 +773,7 @@ section {
   }
 
   .product-plus-wrap {
-    bottom: 10%;
+    bottom: -20%;
     opacity: 1;
     .icon-more {
       opacity: 1;
@@ -784,18 +784,8 @@ section {
   .box_product:hover img {
     transform: none;
   }
-
-  .content-scroll .box_product.img-four {
-    background-image: url("./../../images/body/subpage/bg_basic.webp");
-  }
-  .content-scroll .box_product.img-three {
-    background-image: url("./../../images/body/subpage/bg_basic.webp");
-  }
-  .content-scroll .box_product.img-two {
-    background-image: url("./../../images/body/subpage/bg_basic.webp");
-  }
-  .content-scroll .box_product.img-one {
-    background-image: url("./../../images/body/subpage/bg_basic.webp");
+  .content-scroll .box_product {
+    background-image: var(--bg-product);
   }
 
   .content-scroll .box_product span {

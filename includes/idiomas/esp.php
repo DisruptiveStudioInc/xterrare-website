@@ -130,25 +130,25 @@ $Slogan_text = "Miles ya están invirtiendo de forma consciente, construyendo pa
 $Products_sec_title = "¿Dónde quieres comenzar?";
 
 $Products_title_01 = "Estatus bronce";
-$Products_text_01 = sprintf("%s m², pago inical $%s",
+$Products_text_01 = sprintf("%s m², pago inicial $%s",
   $Investments['bronze']['area'],
   formatCurrency($Investments['bronze']['amount'])
 );
 
 $Products_title_02 = "Estatus plata";
-$Products_text_02 = sprintf("%s m², pago inical $%s",
+$Products_text_02 = sprintf("%s m², pago inicial $%s",
   $Investments['silver']['area'],
   formatCurrency($Investments['silver']['amount'])
 );
 
 $Products_title_03 = "Estatus oro";
-$Products_text_03 = sprintf("%s m², pago inical $%s",
+$Products_text_03 = sprintf("%s m², pago inicial $%s",
   $Investments['gold']['area'],
   formatCurrency($Investments['gold']['amount'])
 );
 
 $Products_title_04 = "Estatus diamante";
-$Products_text_04 = sprintf("%s m² y %s m², pago inical $%s",
+$Products_text_04 = sprintf("%s m² y %s m², pago inicial $%s",
   $Investments['diamond']['area'],
   $Investments['diamond']['area2'],
   formatCurrency($Investments['diamond']['amount'])
