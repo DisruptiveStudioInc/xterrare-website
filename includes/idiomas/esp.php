@@ -42,7 +42,7 @@ $Soon_Description3 = "¡No te lo puedes perder!";
 // Hero
 //-------------------------//
 
-$Hero_01 = "Tu tierra. Tu futuro. Tu libertad.";
+$Hero_01 = "Tu tierra. Tu futuro.<br/>Tu libertad.";
 $Hero_02 = "Terrenos con plusvalía real desde $250 USD dentro de una comunidad global que crece contigo.";
 
 //-------------------------//

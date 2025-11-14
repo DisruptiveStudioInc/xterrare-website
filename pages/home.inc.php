@@ -88,7 +88,10 @@
       </div>
       <div class="tab-content">
         <?php foreach($sec01 as $k => $step): ?>
-          <p class="content <?= $k === 0 ? 'active' : '' ?>" data-text="<?= $step['text'] ?>"><?= $step['text'] ?></p>
+          <p class="content <?= $k === 0 ? 'active' : '' ?>" data-text="<?= $step['text'] ?>"
+            style="<?= isset($step['style']) ? $step['style'] : '' ?>">
+            <?= $step['text'] ?>
+          </p>
         <?php endforeach; ?>
       </div>
 		</div>

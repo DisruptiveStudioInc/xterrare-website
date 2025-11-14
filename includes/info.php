@@ -147,7 +147,8 @@ $aboutSec = array(
 $sec01 = array(
   [
     'title' => $Journey_button_1,
-    'text' => $Journey_text_1
+    'text' => $Journey_text_1,
+    'style' => "max-width:40ch;margin-inline:auto;"
   ],
   [
     'title' => $Journey_button_2,

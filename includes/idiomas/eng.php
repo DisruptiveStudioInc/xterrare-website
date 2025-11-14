@@ -42,7 +42,7 @@ $Soon_Description3 = "You can't miss it!";
 // Hero
 //-------------------------//
 
-$Hero_01 = "Your land. Your future. Your freedom.";
+$Hero_01 = "Your land. Your future.<br/>Your freedom.";
 $Hero_02 = "Land with real appreciation from $250 USD within a global community that grows with you.";
 
 //-------------------------//
