@@ -4,22 +4,22 @@
 <!-- FOOTER -->
 <!-- ============================================== -->
 
-<footer class="c-b-dark all-tc-0">
+<footer class="c-pri all-tc-0">
   <div class="mw-1440">
 
 
-    <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':''; ?>
+    <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between ai-start':'ai-center jc-center'; ?>
     <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col'; ?>
-    <div class="med-fd-col ai-start <?php echo $Condicion_1; ?>">
+    <div class="med-fd-col <?php echo $Condicion_1; ?>">
       <div class="w-50 small-w-100 small-jc-center <?php echo $Condicion; ?>">
 
-        <img src="./images/logo/logo_low.png" class="mw-200 med-m-center" alt="Only Doctor Leadres">
+        <img src="./images/logo/logo-light.svg" class="mw-200 med-m-center" alt="<?= $Company_Fullname; ?>">
         <ul class="fw-wrap med-jc-center g-10 mt-20">
-          <li><a target="_blank" href="https://www.facebook.com/stellumglobal" class="v-white icon small br-2 icon-facebook"></a></li>
-          <li><a target="_blank" href="https://www.instagram.com/stellumglobal" class="v-white icon small br-2 icon-instagram"></a></li>
-          <li><a target="_blank" href="https://www.tiktok.com/@stellumglobal" class="v-white icon small br-2 icon-tiktok"></a></li>
-          <li><a target="_blank" href="https://www.youtube.com/@StellumGlobal" class="v-white icon small br-2 icon-youtube"></a></li>
-          <!-- <li><a target="_blank" href="https://www.linkedin.com/in/stellumglobal/" class="v-white icon small br-2 icon-linkedin"></a></li> -->
+          <li><a target="_blank" href="#" class="v-white icon small br-2 icon-facebook"></a></li>
+          <li><a target="_blank" href="#" class="v-white icon small br-2 icon-instagram"></a></li>
+          <li><a target="_blank" href="#" class="v-white icon small br-2 icon-tiktok"></a></li>
+          <li><a target="_blank" href="#" class="v-white icon small br-2 icon-youtube"></a></li>
+          <!-- <li><a target="_blank" href="#" class="v-white icon small br-2 icon-linkedin"></a></li> -->
         </ul>
       </div>
       <?php if($user_replica): ?>
@@ -47,7 +47,7 @@
         </div>
       <?php endif; ?>
     </div>
-    <div class="t-c p-10 mt-20" style="border-top:1px solid #464f77;">
+    <div class="t-c p-10 mt-20" style="border-top:1px solid #00758d;">
       <p><?php echo $Footer_Rights; ?></p>
     </div>
   </div>

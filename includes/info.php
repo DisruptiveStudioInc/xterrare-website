@@ -13,51 +13,30 @@ $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 // CLIENT
 //-------------------------//
 
-$Company_Name  = "Client";
-$Company_Fullname = "Client full name";
+$Company_Name  = "XTERRARE";
+$Company_Fullname = "$Company_Name GLOBAL";
 
 //-------------------------//
-// BONUSES
+// INVESTMENTS
 //-------------------------//
 
-$Bonuses = array(
-  'flash' => [
-    'first_referal' => 700,
-    'regular_referal' => 400
+$Investments = array(
+  'bronze' => [
+    'area' => 140,
+    'amount' => 250
   ],
-  'speed' => [
-    'people' => 3,
-    'initial_days' => 7,
-    'amount' => 300
+  'silver' => [
+    'area' => 180,
+    'amount' => 550
   ],
-  'level' => array(
-    [
-      'level' => 1,
-      'percentage' => 40
-    ],
-    [
-      'level' => 2,
-      'percentage' => 20
-    ],
-    [
-      'level' => 3,
-      'percentage' => 5
-    ],
-    [
-      'level' => 4,
-      'percentage' => 2
-    ],
-    [
-      'level' => 5,
-      'percentage' => 1
-    ],
-    [
-      'level' => 6,
-      'percentage' => 1
-    ]
-  ),
-  'infinity' => [
-    'people' => 300
+  'gold' => [
+    'area' => 200,
+    'amount' => 1500
+  ],
+  'diamond' => [
+    'area' => 50,
+    'area2' => 60,
+    'amount' => 3000
   ]
 );
 
@@ -80,19 +59,16 @@ $Keywords_Site     = $Keywords;
 //-------------------------//
 
 $Host_Site      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
-$Footer_Rights  = $Company_Fullname." © ".date("Y").". All rights reserved.";
+$Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 
 //-------------------------//
 // LINKS
 //-------------------------//
 
-$link_01 = "inspiration";
-$link_02 = "immersion";
-$link_03 = "connection";
-$link_04 = "essence";
+$link_01 = "membership";
 
-// $Register = "https://my.domain.com/register/$user_replica";
-// $Login    = "https://my.domain.com/login";
+// $Register = "https://my.xterrare.com/register/$user_replica";
+// $Login    = "https://my.xterrare.com/login";
 $Register = "#";
 $Login    = "#";
 
@@ -114,29 +90,10 @@ $Video_vimeo = "1112334525";
 
 $Menu = array(
   array('#home','active',$Menu_01),
-  array('#odl','',$Menu_02),
-  array('#experience','',$Menu_03),
-  // array('?p=product&id=basic','',$Products_title_01)
+  array('#exterrare','',$Menu_02),
+  array('#status','',$Menu_03),
+  // array('?p=product&id=membership','',$Products_title_01)
   // array('','', $Menu_05)
-);
-
-//-------------------------//
-// SUBMENU
-//-------------------------//
-
-$Sub = array(
-  array($Menu_03, array(
-    array($link_01, $Products_title_01, $Products_01),
-    array($link_02, $Products_title_02, $Products_02)
-  ))
-);
-
-$Sub_reg = array(
-  array($Shop_us,'USA'),
-  array($Shop_mx,'MEX'),
-  array($Shop_in,'INT'),
-  array($Shop_co,'COL'),
-  array($Shop_eu,'EUR')
 );
 
 //-------------------------//
@@ -154,7 +111,7 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 // CONTACT
 //-------------------------//
 
-$Email = "client@gmail.com";
+$Email = "cryn@gmail.com";
 // $Schedule = "Mon-Fri: 9 am– 6 pm<br>Saturday: 9 am – 2pm<br>Sunday: Closed";
 // $Phone = "(888) 456 7890";
 // $Address = "Blvd. Kukulcan 1,<br>Puerto Juarez,<br>Zona Hotelera,<br>77500 Cancún, Q.R. México";
@@ -162,6 +119,30 @@ $Email = "client@gmail.com";
 //-------------------------//
 // LOOPS
 //-------------------------//
+
+$aboutSec = array(
+  [
+    'image' => 'mision.webp',
+    'title' => $Mission_title,
+    'text' => $Mission_text
+  ],
+  [
+    'image' => 'vision.webp',
+    'title' => $Vission_title,
+    'text' => $Vission_text
+  ],
+  [
+    'image' => 'valores.webp',
+    'title' => $Values_title,
+    'list' => [
+      $Values_1,
+      $Values_2,
+      $Values_3,
+      $Values_4,
+      $Values_5
+    ]
+  ]
+);
 
 $sec01 = array(
   [
@@ -233,56 +214,57 @@ $sec03 = array(
   ]
 );
 
-$Modal = array(
-	array(
-		$Products_title_01,
-		$Products_sub_01,
-		$Products_text_01
-	)
+$sec04 = array(
+  [
+    'title' => 'Title 1',
+    'text' => 'Text 1'
+  ],
+  [
+    'title' => 'Title 2',
+    'text' => 'Text 2'
+  ],
+  [
+    'title' => 'Title 3',
+    'text' => 'Text 3'
+  ]
 );
+
 $homeProducts = array(
   [
     'id' => 1,
     'number' => 'one',
-    'link' => $link_01,
+    'image' => 'bronce.webp',
+    'background' => 'bg_basic.webp',
+    'link' => 'bronze',
     'title' => $Products_title_01,
     'text' => $Products_text_01
   ],
   [
-    'id' => 3,
+    'id' => 2,
     'number' => 'two',
-    'link' => $link_02,
+    'image' => 'plata.webp',
+    'background' => 'a.jpg',
+    'link' => 'silver',
     'title' => $Products_title_02,
     'text' => $Products_text_02
   ],
   [
     'id' => 3,
     'number' => 'three',
-    'link' => $link_03,
+    'image' => 'oro.webp',
+    'background' => 'b.jpg',
+    'link' => 'gold',
     'title' => $Products_title_03,
     'text' => $Products_text_03
   ],
   [
     'id' => 4,
     'number' => 'four',
-    'link' => $link_04,
+    'image' => 'diamante.webp',
+    'background' => 'c.jpg',
+    'link' => 'diamond',
     'title' => $Products_title_04,
     'text' => $Products_text_04
-  ]
-);
-
-$sec04 = array(
-  [
-    'title' => $Slogan_title_01,
-    'text' => $Slogan_text_01
-  ],
-  [
-    'title' => $Slogan_title_02,
-    'text' => $Slogan_text_02
-  ],
-  [
-    'title' => $Slogan_title_03,
-    'text' => $Slogan_text_03
   ]
 );
 
@@ -306,91 +288,74 @@ $sec07 = array(
     'id' => 4,
     'title' => $Truth_title_04,
     'text' => $Truth_text_04
-  ],
-  [
-    'id' => 5,
-    'title' => $Truth_title_05,
-    'text' => $Truth_text_05
   ]
 );
 
 $sec08 = array(
   [
     'id' => 1,
-    'small_img' => 'revive.webp',
     'name' => 'revive',
-    'title'=> $Spirit_title_01,
-    'list' => [$Spirit01_list_01,$Spirit01_list_02,$Spirit01_list_03,$Spirit01_list_04],
-    'list_type' => 'ul'
+    'text' => $Spirit_01
   ],
   [
     'id' => 2,
-    'small_img' => 'rejuvenate.webp',
     'name' => 'rejuvenate',
-    'title'=> $Spirit_title_02,
-    'list' => [$Spirit02_list_01,$Spirit02_list_02,$Spirit02_list_03,$Spirit02_list_04],
-    'list_type' => 'ul'
+    'text' => $Spirit_02
   ],
   [
     'id' => 3,
-    'small_img' => 'restore.webp',
     'name' => 'restore',
-    'title'=> $Spirit_title_03,
-    'list' => [$Spirit03_list_01,$Spirit03_list_02,$Spirit03_list_03,$Spirit03_list_04,$Spirit03_list_05,$Spirit03_list_06],
-    'list_type' => 'ol'
-  ],
-);
-
-$sec10 = array(
-  [
-    'year' => 2025,
-    'text' => $Roadmap_text_2025
+    'text' => $Spirit_03
   ],
   [
-    'year' => 2026,
-    'text' => $Roadmap_text_2026
+    'id' => 4,
+    'name' => 'renew',
+    'text' => $Spirit_04
+  ],
+  [
+    'id' => 5,
+    'name' => 'reconnect',
+    'text' => $Spirit_05
   ]
 );
 
-$productBonuses = array(
-  'flash' => [
-    'title' => $Bonus_flash_title,
-    'text_01' => $Bonus_flash_text01,
-    'text_02' => $Bonus_flash_text02,
-    'list' => [
-      $Bonus_flash_list_01,
-      $Bonus_flash_list_02
-    ]
+$testimonials = array(
+  [
+    'id' => 1,
+    'name' => 'Jane Smith',
+    'text' => $Testimonial1
   ],
-  'speed' => [
-    'title' => $Bonus_speed_title,
-    'text_01' => $Bonus_speed_text01,
-    'text_02' => $Bonus_speed_text02,
-    'list' => [
-      $Bonus_speed_list_01,
-      $Bonus_speed_list_02
-    ]
+  [
+    'id' => 2,
+    'name' => 'Michael Brown',
+    'text' => $Testimonial2
   ],
-  'level' => [
-    'title' => $Bonus_level_title,
-    'text_01' => $Bonus_level_text01,
-    'text_02' => $Bonus_level_text02,
-    'list' => $Bonuses['level'],
+  [
+    'id' => 3,
+    'name' => 'Alice Johnson',
+    'text' => $Testimonial3
   ],
-  'infinity' => [
-    'title' => $Bonus_infinity_title,
-    'text_01' => $Bonus_infinity_text01,
-    'text_02' => $Bonus_infinity_text02,
-    'list' => [
-      $Bonus_infinity_list_01
-    ]
+  [
+    'id' => 4,
+    'name' => 'Emily Davis',
+    'text' => $Testimonial4
   ],
-  'rewards' => [
-    'title' => $Bonus_rewards_title,
-    'text_01' => $Bonus_rewards_text01,
-    'text_02' => $Bonus_rewards_text02,
-    'list' => [
-      $Bonus_rewards_list_01
-    ]
+  [
+    'id' => 5,
+    'name' => 'David Wilson',
+    'text' => $Testimonial5
+  ],
+  [
+    'id' => 6,
+    'name' => 'John Doe',
+    'text' => $Testimonial6
   ]
 );
+
+//-------------------------//
+// FUNCTIONS
+//-------------------------//
+
+function formatCurrency($number) {
+  return number_format($number, 0, '.', ',');
+}

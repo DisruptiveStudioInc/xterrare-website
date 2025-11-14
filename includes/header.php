@@ -4,7 +4,7 @@
 
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php echo $Lang; ?>" xml:lang="<?php echo $Lang; ?>">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php echo $Lang; ?>" xml:lang="<?php echo $Lang; ?>" style="scroll-behavior: smooth;">
 
 <head>
 
@@ -23,8 +23,8 @@
   <meta property="og:type"         content="website" />
   <meta property="og:description"  content="<?php echo $Description_Site; ?>" />
   <meta property="og:image"        content="<?php echo $Host_Site; ?>/images/facebook/facebook.jpg" />
-  <meta property="og:image:width"  content="1024" />
-  <meta property="og:image:height" content="538" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="675" />
 
   <!-- METAS-->
   <meta name="viewport"            content="width=device-width, initial-scale=1.0" />
@@ -35,13 +35,18 @@
 
   <title><?php echo $Company_Name; ?></title>
 
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <!-- STYLES-->
   <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
   <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
-  <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/body/navigation.css" />
   <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 
   <!-- FAVICON -->
@@ -63,34 +68,14 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <Link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
 
   <!-- jQuery y Slick -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 </head>
 <body id="page-content">
 
-  <?php
-    $wrap_get = "<div class='wrap-get'>
-      <div class='btn-get'>{$Btn_started}</div>
-      <div class='get'>";
-
-    foreach ($links as $link) {
-      $wrap_get .= "
-      <a href='{$link['url']}{$ref}'
-        target='_blank'
-        class='{$link['class']}'
-        aria-label='{$link['label']}'>{$link['text']}</a>";
-    }
-
-    $wrap_get .= "
-      </div>
-    </div>";
-
-    //echo $wrap_get;
-  ?>
   <?php if($user_replica): ?>
     <div class="wrap-get">
       <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
@@ -117,7 +102,7 @@
 
         <div class="jc-center ai-center g-20">
           <div class="logo">
-            <a href="./"><img src="./images/logo/logo_low.png" alt="Only Doctor Leadres"></a>
+            <a href="./"><img src="./images/logo/logo.svg" alt="<?= $Company_Fullname; ?>"></a>
           </div>
           <div class="rel">
             <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>
@@ -209,7 +194,7 @@
                 </div>
                 <?php if($user_replica): ?>
                   <div>
-                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-acc br-30 small-w-100"><?php echo $Menu_reg; ?></a>
+                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?php echo $Menu_reg; ?></a>
                   </div>
                 <?php endif; ?>
               </div>
@@ -222,7 +207,7 @@
             <div class="btns m-0 g-10 med-d-none">
               <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
               <?php if($user_replica): ?>
-                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-acc br-30"><?php echo $Menu_reg; ?></a>
+                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-sec br-30"><?php echo $Menu_reg; ?></a>
               <?php endif; ?>
             </div>
           <?php endif; ?>

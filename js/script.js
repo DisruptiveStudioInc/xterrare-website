@@ -28,8 +28,8 @@ window.addEventListener("load", () => {
       index++;
       data.innerText = `${index}%`;
       progress.style.background = `conic-gradient(
-          var(--color-acc) ${index * 3.6}deg,
-          var(--color-pri) ${index * 3.6}deg
+          var(--color-sec) ${index * 3.6}deg,
+          var(--color-acc) ${index * 3.6}deg
       )`;
     }
   }, 15);

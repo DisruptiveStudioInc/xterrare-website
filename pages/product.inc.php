@@ -1,235 +1,60 @@
+<?php require('./controllers/productController.php'); ?>
+
 <!-- ============================================== -->
 <!-- ONE -->
 <!-- ============================================== -->
-<?php
-
-$Subtitulo_map = [
-    $link_01     => $Products_title_01,
-    $link_02     => $Products_title_02
-];
-
-$Text_map = [
-    $link_01     => $Products_text_inner_01,
-    $link_02     => $Products_text_inner_02
-];
-
-$Text_price = [
-    $link_01     => $Products_price_01,
-    $link_02     => $Products_price_02
-];
-
-$Ingredients_map = [
-    $link_01     => $Ingredients_01,
-    $link_02     => $Ingredients_02
-];
-
-$Ingredients_list_map = [
-    $link_01 => [
-        $Ingredients_01_01, $Ingredients_01_02, $Ingredients_01_03,
-        $Ingredients_01_04, $Ingredients_01_05, $Ingredients_01_06
-    ],
-    $link_02 => [
-        $Ingredients_02_01, $Ingredients_02_02, $Ingredients_02_03,
-        $Ingredients_02_04, $Ingredients_02_05, $Ingredients_02_06
-    ]
-];
-
-$Benefits_list_map = [
-    $link_01 => [
-        $Benefits_01_tit_01, $Benefits_01_01, $Benefits_01_02, $Benefits_01_03, $Benefits_01_04
-    ],
-    $link_02 => [
-        $Benefits_02_tit_01, $Benefits_02_01, $Benefits_02_02, $Benefits_02_03, $Benefits_02_04, $Benefits_02_05
-    ]
-];
-
-$Benefits_sub_map = [
-    $link_01    => $Benefits_sub_01,
-    $link_02    => $Benefits_sub_02
-];
-
-$Benefits_sub_texts = [
-    $link_01    => $Benefits_sub_p_01,
-    $link_02    => $Benefits_sub_p_02
-];
-
-$Benefits_titles_map = [
-    $link_01 => [$Benefits_01_tit_01, $Benefits_01_tit_02, $Benefits_01_tit_03, $Benefits_01_tit_04],
-    $link_02 => [$Benefits_02_tit_01, $Benefits_02_tit_02, $Benefits_02_tit_03, $Benefits_02_tit_04, $Benefits_02_tit_05]
-];
-
-$Started_title_map = [
-    $link_01 => $Satarted_title_01,
-    $link_02 => $Satarted_title_02
-];
-
-$Started_sub_map = [
-    $link_01 => $Satarted_sub_01,
-    $link_02 => $Satarted_sub_02
-];
-
-$Started_sub_tit = [
-    $link_01 => $Satarted_title_01_01,
-    $link_02 => $Satarted_title_02_01
-];
-
-
-$Started_list_map = [
-    $link_01 => [$Satarted_list_01_01, $Satarted_list_02_01, $Satarted_list_03_01, $Satarted_list_04_01, $Satarted_list_05_01],
-    $link_02 => [$Satarted_list_01_02, $Satarted_list_02_02, $Satarted_list_03_02, $Satarted_list_04_02, $Satarted_list_05_02]
-];
-
-$Started_sub_footnote = [
-    $link_01 => $Satarted_footnote_01,
-    $link_02 => $Satarted_footnote_02
-];
-
-$Started_plans_tit = [
-  $link_01 => $Satarted_title_plans_01,
-  $link_02 => $Satarted_title_plans_02
-];
-
-$Started_plans_map = [
-    $link_01 => [$Satarted_plans_list_01_01, $Satarted_plans_list_02_01, $Satarted_plans_list_03_01, $Satarted_plans_list_04_01, $Satarted_plans_list_05_01, $Satarted_plans_list_06_01, $Satarted_plans_list_07_01],
-    $link_02 => [$Satarted_plans_list_01_02, $Satarted_plans_list_02_02, $Satarted_plans_list_03_02, $Satarted_plans_list_04_02, $Satarted_plans_list_05_02, $Satarted_plans_list_06_02, $Satarted_plans_list_07_02]
-];
-
-$Started_plans_texts_map = [
-  $link_01 => [$Satarted_plans_text_01_01, $Satarted_plans_text_01_02],
-  $link_02 => [$Satarted_plans_text_02_01, $Satarted_plans_text_02_02]
-];
-
-$Started_bonuses_title = [
-  $link_01 => $Satarted_title_bonus_01,
-  $link_02 => $Satarted_title_bonus_02
-];
-
-$Started_bonuses_map = [
-  $link_01 => [$Satarted_bonus_text_01_01, $Satarted_bonus_text_02_01, $Satarted_bonus_text_03_01, $Satarted_bonus_text_04_01],
-  $link_02 => [$Satarted_bonus_text_01_02, $Satarted_bonus_text_02_02, $Satarted_bonus_text_03_02, $Satarted_bonus_text_04_02]
-];
-
-$Started_bonuses_footnote = [
-  $link_01 => $Satarted_bonus_footnote_01,
-  $link_02 => $Satarted_bonus_footnote_02
-];
-
-$Started_link_map = [
-    $link_01 => [
-        $Satarted_title_link_01_01,
-        $Satarted_title_link_01_02,
-        $Satarted_title_link_01_03,
-        $Satarted_title_link_01_04
-    ],
-    $link_02 => [
-        $Satarted_title_link_02_01,
-        $Satarted_title_link_02_02,
-        $Satarted_title_link_02_03,
-        $Satarted_title_link_02_04
-    ]
-];
-
-$Started_subpage_map = [
-    $link_01 => $Satarted_subpage_01,
-    $link_02 => $Satarted_subpage_02
-];
-
-// ====================
-// ASIGNACIÓN SEGURA
-// ====================
-$Subtitulo          = $Subtitulo_map[$id]            ?? "";
-$Text               = $Text_map[$id]                 ?? "";
-$Price              = $Text_price[$id]               ?? "";
-$Ingredients        = $Ingredients_map[$id]          ?? "";
-$Ingredients_list   = $Ingredients_list_map[$id]     ?? [];
-$Benefits_Sub       = $Benefits_sub_map[$id]         ?? "";
-$Benefits_Text      = $Benefits_sub_texts[$id]       ?? "";
-$Benefits_list      = $Benefits_list_map[$id]        ?? [];
-$Benefits_titles    = $Benefits_titles_map[$id]      ?? [];
-$Started_title      = $Started_title_map[$id]        ?? "";
-$Started_sub        = $Started_sub_map[$id]          ?? "";
-$Started_tit        = $Started_sub_tit[$id]          ?? "";
-$Started_list       = $Started_list_map[$id]         ?? [];
-$Started_list_foot  = $Started_sub_footnote[$id]     ?? "";
-$Started_plan_tit   = $Started_plans_tit[$id]        ?? "";
-$Started_plans      = $Started_plans_map[$id]        ?? [];
-$Started_plan_txt   = $Started_plans_texts_map[$id]  ?? [];
-$Started_bonus_tit  = $Started_bonuses_title[$id]    ?? "";
-$Started_bonuses    = $Started_bonuses_map[$id]      ?? [];
-$Started_bonus_foot = $Started_bonuses_footnote[$id] ?? "";
-$Started_subpage    = $Started_subpage_map[$id]      ?? "";
-
-$Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
-
-?>
 
 <section>
-    <div class="block-box-bg overlay o-70">
-        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-20 p-30">
+  <div class="block-box-bg overlay o-30">
+    <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-80 med-g-0 small-g-20 p-30">
 
-            <div class="info w-60 med-w-100 all-tc-0 small-t-c">
-                <h1 class="h1-special"><?php echo $Subtitulo; ?></h1>
-                <p class="small-d-none"><?php echo $Text; ?></p>
-                <p class="h3"><?php echo $Price; ?></p>
+      <div class="info w-60 med-w-50 small-w-100 small-t-c">
+        <h1 class="h1-special tc-0"><?= $productContent[$id]['subtitle']; ?></h1>
+        <p class="h3 tc-0 t-balance"><?= $productContent[$id]['text1']; ?></p>
+        <p class="tc-0 mb-20 t-balance small-d-none"><?= $productContent[$id]['text2']; ?></p>
+        <p class="h2 fw-700 tc-acc"><?= $productContent[$id]['price']; ?></p>
 
-                <div class="btns g-10 small-jc-center">
-                    <?php
-                    $wrap_product = "<div class='wrap-get subpage'>
-                      <div class='btn-get'>{$Btn_buy}</div>
-                      <div class='get'>";
-
-                    foreach ($links_product as $link) {
-                        $wrap_product .= "
-                        <a href='{$link['url']}{$id}{$ref}'
-                           target='_blank'
-                           class='{$link['class']}'
-                           aria-label='{$link['label']}'>{$link['text']}</a>";
-                    }
-
-                    $wrap_product .= "
-                      </div>
-                    </div>";
-
-                    //echo $wrap_product;
-                    ?>
-                    <?php if($user_replica): ?>
-                      <div class="wrap-get subpage">
-                        <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
-                      </div>
-                    <?php endif; ?>
-                </div>
+        <div class="btns g-10 small-jc-center">
+          <?php if($user_replica): ?>
+            <div class="wrap-get subpage">
+              <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_buy; ?></a>
             </div>
-
-            <img class="w-40 med-w-30 small-w-80 small-mt-40" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+          <?php endif; ?>
         </div>
-        <img class="full-img-abs" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?> background" />
+      </div>
+
+      <img class="w-40 med-w-50 small-w-80 small-mt-40" src="./images/body/products/<?= $productContent[$id]['icon']; ?>.webp" alt="<?= $productContent[$id]['id']; ?> Product" />
     </div>
+    <img class="full-img-abs" src="./images/body/subpage/bg_<?= $productContent[$id]['id']; ?>.webp" alt="<?= $productContent[$id]['id']; ?> background" />
+  </div>
 </section>
 
 <!-- ============================================== -->
 <!-- ONE -->
 <!-- ============================================== -->
 
-<section class="c-sub <?php echo $id; ?>">
-    <div class="h-100 of-h rel small-h-0 p-20 d-flex fd-col ai-center jc-center">
+<section class="c-sub <?= $productContent[$id]['id']; ?>">
+  <div class="h-100 of-h rel small-h-0 p-20 d-flex fd-col ai-center jc-center">
 
-      <h2 class="abs-text h1 t-c <?php echo $Condicion; ?>"><?php echo $Ingredients; ?></h2>
-      <img class="img-middle br-20 small-d-none" src="./images/body/products/<?php echo $id; ?>.webp" alt="<?php echo $id; ?> Product" />
+    <h2 class="abs-text h1 t-c uppercase mb-40 small-mb-20 <?= $productContent[$id]['ingredients_textCl']; ?>"><?= $productContent[$id]['ingredients']; ?></h2>
+    <div class="rel w-100">
+      <img class="img-middle br-20 small-d-none" src="./images/body/products/<?= $productContent[$id]['ingredients_image']; ?>.webp" alt="<?= $productContent[$id]['id']; ?> Product" />
 
       <div class="ingredients_wrap">
         <ul class="ingredients m-center">
-          <?php foreach ($Ingredients_list as $index => $ingredient): ?>
+          <?php foreach ($productContent[$id]['ingredients_list'] as $k => $ingredient): ?>
             <li>
-              <div class="ingredient-pill">
-                <span class="v-custom icon icon-<?php echo $index+1; ?> c-<?php echo $id; ?> br-50 <?php echo $id; ?>"></span>
-                <?php echo $ingredient; ?>
+              <div class="ingredient-pill" style="--pill-delay: <?= 100 * $k; ?>ms;">
+                <span class="v-custom icon icon-<?= $k+1; ?> c-<?= $productContent[$id]['id']; ?> br-50 <?= $productContent[$id]['id']; ?>"></span>
+                <?= $ingredient; ?>
               </div>
             </li>
           <?php endforeach; ?>
         </ul>
       </div>
-
     </div>
+
+  </div>
 </section>
 
 <!-- ============================================== -->
@@ -237,35 +62,35 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 <!-- ============================================== -->
 
 <section>
-    <div class="img_med of-h">
-        <div class="h-100 rel all-tc-0 overlay o-60 custom">
-            <div class="center">
-                <h2 class="h1"><?php echo $Benefits; ?></h2>
-                <p><?php echo $Benefits_Sub; ?></p>
-                <p><?= $Benefits_Text ; ?></p>
-            </div>
+  <div class="img_med of-h">
+    <div class="h-100 rel all-tc-0 overlay o-60 custom">
+      <div class="center">
+        <h2 class="h1 uppercase"><?= $Benefits; ?></h2>
+        <p><?= $productContent[$id]['benefits_sub']; ?></p>
+        <p><?= $Benefits_Text ; ?></p>
+      </div>
 
-            <ul class="benefits-list med-d-none">
-                <?php
-                $titles = $Benefits_titles_map[$id] ?? [];
-                $benefits = $Benefits_list_map[$id] ?? [];
+      <ul class="benefits-list med-d-none">
+        <?php
+        $titles = $productContent[$id]['benefits_titles'] ?? [];
+        $benefits = $productContent[$id]['benefits_list']  ?? [];
 
-                foreach ($titles as $index => $title) {
-                    // Cada título tiene su correspondiente descripción en $benefits
-                    $desc = $benefits[$index + 1] ?? ''; // +1 porque en $Benefits_list_map, el primer elemento es el título
-                    ?>
-                    <li class="benefits b-<?php echo $index + 1; ?>">
-                        <span class="v-custom icon icon-<?php echo 7 + $index; ?> <?php echo $id; ?> i-big"></span>
-                        <h4><?php echo $title; ?></h4>
-                        <p><?php echo $desc; ?></p>
-                    </li>
-                <?php } ?>
-            </ul>
+        foreach ($titles as $index => $title) {
+          // Cada título tiene su correspondiente descripción en $benefits
+          $desc = $benefits[$index + 1] ?? ''; // +1 porque en $Benefits_list_map, el primer elemento es el título
+          ?>
+          <li class="benefits b-<?= $index + 1; ?>">
+            <span class="v-custom icon icon-<?= 7 + $index; ?> <?= $productContent[$id]['id']; ?> i-big"></span>
+            <h4 class="uppercase t-pretty"><?= $title; ?></h4>
+            <p class="t-balance"><?= $desc; ?></p>
+          </li>
+        <?php } ?>
+      </ul>
 
-            <img class="full-img" src="./images/body/subpage/bg_middle_<?php echo $id; ?>.webp" alt="<?php echo $id; ?>">
+      <img class="full-img" src="./images/body/subpage/bg_middle_<?= $productContent[$id]['id']; ?>.webp" alt="<?= $productContent[$id]['id']; ?>">
 
-        </div>
     </div>
+  </div>
 </section>
 
 <!-- ============================================== -->
@@ -273,71 +98,58 @@ $Condicion =($id == $link_01 || $id == $link_02)? 'tc-100':'';
 <!-- ============================================== -->
 
 <section>
-	<div class="mw-1280 g-40 fd-col">
+	<div class="mw-1280 min-h-dhv jc-center g-40 fd-col pt-80 pb-80 med-pt-50 med-pb-50">
 
 		<div class="t-c">
-            <h2 class="h2"><?php echo $Started_title; ?></h2>
-            <p class="h4"><?php echo $Started_sub; ?></p>
+      <h2 class="h2 uppercase"><?= $productContent[$id]['started_title']; ?></h2>
+      <p class="h4"><?= $productContent[$id]['started_sub']; ?></p>
+    </div>
+
+    <div class="jc-center g-20 ai-stretch small-fd-col">
+      <div class="w-100 rel">
+        <div class="banner" style="position:sticky;top:80px;">
+          <ul>
+            <?php
+              $Service = array(
+                array('Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.','Sofía R.',$id),
+                array('I can focus for hours without getting burned out. Revive works.','Leo M.',$id),
+                array('In one week, my memory and mental energy improved','Andrea T.',$id)
+              );
+
+              foreach ($Service as $k => $item){
+                $item_img_key = $k+1;
+                echo "
+                <li>
+                  <img src='./images/body/banner/{$item_img_key}.webp' alt='{$item[0]}'/>
+                </li>
+                ";
+              }
+            ?>
+          </ul>
         </div>
-
-        <div class="jc-center g-20 ai-stretch small-fd-col">
-
-            <div class="w-100 rel">
-              <div class="banner" style="position:sticky;top:80px;">
-                <ul>
-                  <?php
-                    $Service = array(
-                      array('Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.','Sofía R.',$id),
-                      array('I can focus for hours without getting burned out. Revive works.','Leo M.',$id),
-                      array('In one week, my memory and mental energy improved','Andrea T.',$id)
-                    );
-
-                    $counter = 1;
-                    foreach ($Service as $item){
-                      echo "
-                      <li>
-                        <img src='./images/body/banner/{$counter}.webp' alt='{$item[0]}'/>
-                      </li>
-                      ";
-                      $counter++;
-                    }
-                  ?>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Textos dinámicos -->
-            <div class="w-100 text_spirit <?php echo $id; ?>">
-              <?php foreach($productBonuses as $bonus): ?>
-                <div>
-                  <h3 class="h4"><?= $bonus['title']; ?></h3>
-                  <p><?= $bonus['text_01']; ?></p>
-                  <ul class="menu-list icon-check v-white">
-                    <?php foreach ($bonus['list'] as $li): ?>
-                      <li>
-                        <?= (gettype($li) === 'array') ?
-                        "{$Bonus_level_list_level} {$li['level']}: {$li['percentage']}%" :
-                        $li; ?>
-                      </li>
-                    <?php endforeach; ?>
-                  </ul>
-                  <p class="fw-700"><?= $bonus['text_02']; ?></p>
-                </div>
-              <?php endforeach; ?>
-            </div>
-
-        </div>
+      </div>
+      <!-- Textos dinámicos -->
+      <div class="w-100 text_spirit <?= $productContent[$id]['id']; ?>">
+        <?php foreach($productContent[$id]['started_list'] as $item): ?>
+          <div>
+            <h3 class="h4"><?= $item['title']; ?></h3>
+            <p><?= $item['text']; ?></p>
+          </div>
+        <?php endforeach; ?>
+        <p class="fw-700 mt-30"><?= $productContent[$id]['started_foot']; ?></p>
+      </div>
+    </div>
 
 	</div>
 </section>
 
-<section class="c-<?php echo $id; ?>">
-    <div class="mw-1280 t-c big">
-        <h2 class="h1 med-mt-50"><?php echo $Started_subpage; ?></h2>
-        <?php if(false): ?>
-          <a href="<?php echo $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
-        <?php endif; ?>
-    </div>
+<section class="c-<?= $productContent[$id]['id']; ?>">
+  <div class="mw-1280 t-c big">
+    <h2 class="h1-special uppercase med-mt-50"><?= $productContent[$id]['subpage']; ?></h2>
+    <?php if(false): ?>
+      <a href="<?= $Login; ?>" target="_blank" class="btn big c-acc br-50 mt-40 small-mt-20"><?= $Btn_start; ?></a>
+    <?php endif; ?>
+  </div>
 </section>
 
 <script>

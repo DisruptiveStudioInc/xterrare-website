@@ -1,4 +1,9 @@
 <?php
+	// Enable error reporting for development
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+
 	session_start();
 	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
 		$user_replica = $_SESSION['user_replica'];
@@ -8,7 +13,7 @@
 		$_SESSION['user_replica'] = $user_replica;
 	}
 
-  $Maintenance = true;
+  $Maintenance = false;
   $ConnectBO = true;
   $pages_dir = 'pages';
 
