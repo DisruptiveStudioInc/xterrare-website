@@ -1,6 +1,6 @@
 <section class="products of-h">
 
-  <img class="background visible anim-scale" src="./images/body/subpage/bg_basic.webp" alt="Basic background">
+  <img class="background visible anim-scale" src="./images/body/subpage/bg_basic.webp" alt="Basic background" loading="lazy">
 
 	<div class="anchor" id="investment"></div>
 	<div class="d-flex min-h-dhv fd-col content-scroll g-40 jc-center ai-center rel wrap_products">
@@ -11,7 +11,7 @@
 
     <h2 class="h1 tc-0"><?= $Products_sec_title ?></h2>
     <div class="rel t-c">
-      <img src="./images/body/products/basic.webp" class="product-image m-center cursor-pointer w-50" alt="basic" onclick="toggleProductInfo()"/>
+      <img src="./images/body/products/basic.webp" class="product-image m-center cursor-pointer w-50" alt="basic" onclick="toggleProductInfo()" loading="lazy"/>
       <div class="abs product-plus-wrap d-flex fd-col ai-center pointer-e-none">
         <button type="button" class="v-white c-pri icon br-50 icon-more pointer-e-none"></button>
       </div>

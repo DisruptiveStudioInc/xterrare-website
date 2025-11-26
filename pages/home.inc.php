@@ -111,7 +111,7 @@
     </div>
     <?php foreach($verticalSlides as $k => $slide): ?>
 		<div class="letter-wrap" style="--item-index:<?= $k; ?>">
-      <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>">
+      <img class="letter-bg img_0<?= $slide['id']; ?>" src="./images/body/letters/<?= $slide['id']; ?>.webp" alt="<?= $slide['title']; ?>" loading="lazy">
       <div class="letter-content word_0<?= $slide['id']; ?> abs w-100 p-40 med-p-10-20 med-pt-50 med-pb-50 t-c">
         <h3 class="letter-title t-balance tc-0"><?= $slide['title']; ?></h3>
         <p class="h4 letter-text t-balance h3 tc-0"><?= $slide['text']; ?></p>
@@ -181,7 +181,7 @@
     <ul class="people" style="--total-items:<?= count($testimonials) ?>;">
       <?php foreach ($testimonials as $k => $item): ?>
         <li class='item item<?= $item['id'] ?>' style='--item-index:<?= $k +1 ?>'>
-          <img src='./images/body/evolvers/<?= $item['id'] ?>.webp' alt='<?= $item['name'] ?>'>
+          <img src='./images/body/evolvers/<?= $item['id'] ?>.webp' alt='<?= $item['name'] ?>' loading="lazy">
           <h3 class="h5 tc-pri"><?= $item['name'] ?></h3>
           <p><?= $item['text'] ?></p>
         </li>
@@ -290,18 +290,18 @@ document.addEventListener("DOMContentLoaded", function () {
 /* VIDEO HERO */
 /* ============================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
-    const iframe = document.querySelector('.video-iframe-wrapper iframe');
-    const player = new Vimeo.Player(iframe);
-    const placeholder = document.querySelector('.video-placeholder');
+// document.addEventListener("DOMContentLoaded", function () {
+//     const iframe = document.querySelector('.video-iframe-wrapper iframe');
+//     const player = new Vimeo.Player(iframe);
+//     const placeholder = document.querySelector('.video-placeholder');
 
-    // Cuando el video empieza a reproducirse, ocultamos el placeholder
-    player.on('play', function () {
-        placeholder.style.transition = "opacity 0.8s ease";
-        placeholder.style.opacity = "0";
-        setTimeout(() => placeholder.style.display = "none", 800);
-    });
-});
+//     // Cuando el video empieza a reproducirse, ocultamos el placeholder
+//     player.on('play', function () {
+//         placeholder.style.transition = "opacity 0.8s ease";
+//         placeholder.style.opacity = "0";
+//         setTimeout(() => placeholder.style.display = "none", 800);
+//     });
+// });
 
 /* ============================================== */
 /* TABS */

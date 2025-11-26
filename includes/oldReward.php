@@ -14,7 +14,7 @@
       <?php foreach($sec07 as $item): ?>
         <li>
           <h2><?= $item['title']; ?></h2>
-          <span><img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="br-20"/>
+          <span><img src="./images/body/truth/<?= $item['id']; ?>.webp" alt="<?= $item['title']; ?>" class="br-20" loading="lazy"/>
             <p class="h2 t-pretty t-c"><?= $item['text']; ?></p>
           </span>
         </li>

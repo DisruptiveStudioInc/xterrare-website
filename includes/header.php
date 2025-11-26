@@ -70,6 +70,10 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
 
+  <link rel="preconnect" href="https://player.vimeo.com" />
+  <link rel="preconnect" href="https://vod-adaptive-ak.vimeocdn.com" />
+  <link rel="preconnect" href="https://f.vimeocdn.com" />
+
   <!-- jQuery y Slick -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 

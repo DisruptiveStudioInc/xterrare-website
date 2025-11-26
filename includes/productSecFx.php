@@ -20,9 +20,9 @@
     </div>
 
     <?php foreach($homeProducts as $item): ?>
-      <div data-bg="img_product_<?= $item['link']; ?>" class="box_product rel flex ai-center jc-center fd-col img-<?= $item['number'] ?>" style="--bg-product:url(./../../images/body/subpage/<?= $item['background']; ?>);z-index:<?= count($homeProducts); ?>;">
+      <div data-bg="img_product_<?= $item['link']; ?>" class="box_product rel flex ai-center jc-center fd-col img-<?= $item['number'] ?>" style="--bg-product:url(./../../images/body/subpage/<?= $item['background']; ?>);z-index:<?= count($homeProducts); ?>;" loading="lazy">
         <div class="rel t-c">
-          <img src="./images/body/products/<?= $item['image']; ?>" class="product m-center cursor-pointer" alt="<?= $item['link']; ?>" onclick="openModal('Modal<?= $item['id']; ?>')"/>
+          <img src="./images/body/products/<?= $item['image']; ?>" class="product m-center cursor-pointer" alt="<?= $item['link']; ?>" onclick="openModal('Modal<?= $item['id']; ?>')" loading="lazy"/>
           <div class="abs product-plus-wrap d-flex fd-col ai-center g-20 pointer-e-none">
             <button type="button" class="v-white c-pri icon br-50 icon-more pointer-e-none"></button>
             <!-- <a href="?p=product&id=<?= $item['link']; ?>" class="btn c-ter br-50 pointer-e-auto"><?= $Btn_view; ?></a> -->
@@ -32,7 +32,7 @@
     <?php endforeach; ?>
 
     <?php foreach($homeProducts as $k => $item): ?>
-      <img id="img_product_<?= $item['link']; ?>" class="background product-bg anim-scale med-d-none img_product_<?= $item['id']; ?>" src="./images/body/subpage/<?= $item['background']; ?>" alt="<?= $item['link']; ?> background" style="z-index:<?= $k ?>">
+      <img id="img_product_<?= $item['link']; ?>" class="background product-bg anim-scale med-d-none img_product_<?= $item['id']; ?>" src="./images/body/subpage/<?= $item['background']; ?>" alt="<?= $item['link']; ?> background" style="z-index:<?= $k ?>" loading="lazy">
     <?php endforeach; ?>
 
 	</div>
