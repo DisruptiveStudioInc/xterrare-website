@@ -1,7 +1,4 @@
-<?php
-  include("info.php");
-?>
-
+<?php #include("info.php"); ?>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php echo $Lang; ?>" xml:lang="<?php echo $Lang; ?>" style="scroll-behavior: smooth;">
@@ -41,34 +38,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- STYLES-->
-  <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/min/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/min/main.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/min/root.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/body/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/body/navigation.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/body/slick.min.css" />
 
   <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicon/manifest.json">
-  <meta name="msapplication-config" content="./images/favicon/browserconfig.xml" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/manifest.json">
+  <meta name="msapplication-config" content="/images/favicon/browserconfig.xml" />
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
 
   <link rel="preconnect" href="https://player.vimeo.com" />
   <link rel="preconnect" href="https://vod-adaptive-ak.vimeocdn.com" />
@@ -106,16 +103,19 @@
 
         <div class="jc-center ai-center g-20">
           <div class="logo">
-            <a href="./"><img src="./images/logo/logo.svg" alt="<?= $Company_Fullname; ?>"></a>
+            <a href="<?= \Includes\Localization::url('home') ?>"><img src="/images/logo/logo.svg" alt="<?= $Company_Fullname; ?>"></a>
           </div>
           <div class="rel">
-            <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>
+            <div class="btn-lan <?= \Includes\Localization::getLang(); ?>"><?= \Includes\Localization::getLang() === 'es' ? 'Esp' : 'Eng'; ?></div>
             <div class="lan">
               <?php
-                $idiomas = ['esp', 'eng'];
-                foreach ($idiomas as $idioma_opcion) {
-                    $activeClass = ($_SESSION["language"] === $idioma_opcion) ? 'selected' : '';
-                    echo "<a class='$idioma_opcion $activeClass' href='?language=$idioma_opcion$Actual_Page_Lan$Client_Page_Id'>" . ucfirst($idioma_opcion) . "</a>";
+                $config = require __DIR__ . '/../config.php';
+                $availableLangs = $config['available_langs'] ?? ['es' => 'Esp', 'en' => 'Eng'];
+                $currentLang = \Includes\Localization::getLang();
+                foreach ($availableLangs as $langCode => $langName) {
+                    $activeClass = ($currentLang === $langCode) ? 'selected' : '';
+                    $langUrl = \Includes\Localization::getCurrentUrl($langCode);
+                    echo "<a class='$langCode $activeClass' href='$langUrl'>" . $langName . "</a>";
                 }
               ?>
             </div>
@@ -133,9 +133,9 @@
 
                 // Primer item -> dinámico
                 if ($counter == 1) {
-                  // Si NO estamos en home ni vacío -> ir a "./"
+                  // Si NO estamos en home ni vacío -> ir a "/"
                   if ($Actual_Page !== '' && $Actual_Page !== 'home') {
-                    $item[0] = './';
+                    $item[0] = '/';
                   } else {
                     $item[0] = '#home';
                   }
@@ -162,7 +162,7 @@
                       echo "<ul class='sub-sub'>";
                       foreach ($item_sub[1] as $subsub) {
                         echo "<li>
-                                <span class='img'><img src='./images/body/products/{$subsub[0]}.webp' alt='{$subsub[2]}'></span>
+                                <span class='img'><img src='/images/body/products/{$subsub[0]}.webp' alt='{$subsub[2]}'></span>
                                 <a href='?p=product&id={$subsub[0]}'>{$subsub[1]}<span>{$subsub[2]}</span></a>
                               </li>";
                       }
@@ -191,30 +191,26 @@
                 }
               }
             ?>
-            <?php if($ConnectBO): ?>
-              <div class="d-none med-d-block mt-20">
-                <div class="mb-10">
-                  <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
-                </div>
-                <?php if($user_replica): ?>
-                  <div>
-                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?php echo $Menu_reg; ?></a>
-                  </div>
-                <?php endif; ?>
+            <div class="d-none med-d-block mt-20">
+              <div class="mb-10">
+                <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
               </div>
-            <?php endif; ?>
+              <?php if($user_replica): ?>
+                <div>
+                  <a href="<?php echo $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?php echo $Menu_reg; ?></a>
+                </div>
+              <?php endif; ?>
+            </div>
           </ul>
         </div>
 
         <div class="jc-center ai-center">
-          <?php if($ConnectBO): ?>
-            <div class="btns m-0 g-10 med-d-none">
-              <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
-              <?php if($user_replica): ?>
-                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-sec br-30"><?php echo $Menu_reg; ?></a>
-              <?php endif; ?>
-            </div>
-          <?php endif; ?>
+          <div class="btns m-0 g-10 med-d-none">
+            <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
+            <?php if($user_replica): ?>
+              <a href='<?php echo $Register; ?>' target="_blank" class="btn c-sec br-30"><?php echo $Menu_reg; ?></a>
+            <?php endif; ?>
+          </div>
           <div class="hamburguer">
             <span></span>
             <span></span>

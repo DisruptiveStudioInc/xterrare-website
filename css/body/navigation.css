@@ -452,37 +452,37 @@ ul.sub li a span {
   opacity: 1;
   font-weight: 600;
 }
-.lan a.esp::before,
-.btn-lan.esp::before {
-  background-image: url("./../../images/flags/esp.svg");
+.lan a.es::before,
+.btn-lan.es::before {
+  background-image: url("./../../images/flags/es.svg");
 }
-.lan a.eng::before,
-.btn-lan.eng::before {
-  background-image: url("./../../images/flags/eng.svg");
+.lan a.en::before,
+.btn-lan.en::before {
+  background-image: url("./../../images/flags/en.svg");
 }
-.lan a.chi::before,
-.btn-lan.chi::before {
-  background-image: url("./../../images/flags/chi.svg");
+.lan a.cn::before,
+.btn-lan.cn::before {
+  background-image: url("./../../images/flags/cn.svg");
 }
-.lan a.cor::before,
-.btn-lan.cor::before {
-  background-image: url("./../../images/flags/cor.svg");
+.lan a.kr::before,
+.btn-lan.kr::before {
+  background-image: url("./../../images/flags/kr.svg");
 }
-.lan a.fra::before,
-.btn-lan.fra::before {
-  background-image: url("./../../images/flags/fra.svg");
+.lan a.fr::before,
+.btn-lan.fr::before {
+  background-image: url("./../../images/flags/fr.svg");
 }
-.lan a.jpn::before,
-.btn-lan.jpn::before {
-  background-image: url("./../../images/flags/jpn.svg");
+.lan a.jp::before,
+.btn-lan.jp::before {
+  background-image: url("./../../images/flags/jp.svg");
 }
-.lan a.por::before,
-.btn-lan.por::before {
-  background-image: url("./../../images/flags/por.svg");
+.lan a.pt::before,
+.btn-lan.pt::before {
+  background-image: url("./../../images/flags/pt.svg");
 }
-.lan a.ita::before,
-.btn-lan.ita::before {
-  background-image: url("./../../images/flags/ita.svg");
+.lan a.it::before,
+.btn-lan.it::before {
+  background-image: url("./../../images/flags/it.svg");
 }
 
 /* ============================================== */

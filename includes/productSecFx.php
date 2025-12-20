@@ -15,8 +15,8 @@
 	<div class="anchor" id="status"></div>
 	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel wrap_products">
     <div class="section-arrows">
-        <button class="arrow up"></button>
-        <button class="arrow down"></button>
+      <button class="arrow up"></button>
+      <button class="arrow down"></button>
     </div>
 
     <?php foreach($homeProducts as $item): ?>

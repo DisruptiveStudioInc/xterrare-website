@@ -1,59 +1,34 @@
 <?php
-	// Enable error reporting for development
-	ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);
+// Enable error reporting for development
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-	session_start();
-	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
-		$user_replica = $_SESSION['user_replica'];
-	}
-	else{
-		$user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
-		$_SESSION['user_replica'] = $user_replica;
-	}
+session_start();
+require __DIR__ . '/vendor/autoload.php';
 
-  $Maintenance = false;
-  $ConnectBO = true;
-  $pages_dir = 'pages';
+$config = require __DIR__ . '/config.php';
+$bypassMaintenance = $_GET['dev'] ?? null;
 
-  if($Maintenance){
-    if(isset($_GET['dev'])){
-      include("./includes/header.php");
-        if(!empty($_GET['p'])){
+// Initialize user_replica from session or URL parameter
+if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
+  $user_replica = $_SESSION['user_replica'];
+}
+else{
+  $user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
+  $_SESSION['user_replica'] = $user_replica;
+}
 
-          $pages = scandir ($pages_dir, 0);
-          unset ($pages[0], $pages[1]);
-          $p = $_GET['p'];
+// Make $user_replica available globally throughout the application
+$GLOBALS['user_replica'] = $user_replica;
 
-          if (in_array($p.'.inc.php', $pages)){
-            include ($pages_dir.'/'.$p.'.inc.php');
-          }else{
-            echo '<section><div class="jc-center ai-center h-100"><p>Sorry, the page does not exist.</p></div></section>';
-          }
-        } else {
-          include($pages_dir.'/home.inc.php');
-        }
-      include("./includes/footer.php");
-    } else {
-      include_once('./includes/soon.php');
-    }
-  } else {
-    include("./includes/header.php");
-      if(!empty($_GET['p'])){
+include __DIR__ . '/includes/info.php';
 
-        $pages = scandir ($pages_dir, 0);
-        unset ($pages[0], $pages[1]);
-        $p = $_GET['p'];
+// Maintenance Mode
+if (isset($config['maintenance_mode']) && $config['maintenance_mode'] === true && !isset($bypassMaintenance)) {
+  include __DIR__ . '/includes/soon.php';
+  exit;
+}
 
-        if (in_array($p.'.inc.php', $pages)){
-          include ($pages_dir.'/'.$p.'.inc.php');
-        }else{
-          echo '<section><div class="jc-center ai-center h-100"><p>Sorry, the page does not exist.</p></div></section>';
-        }
-      } else {
-        include($pages_dir.'/home.inc.php');
-      }
-    include("./includes/footer.php");
-  }
-?>
+// Router Dispatch
+require __DIR__ . '/includes/routes.php';
