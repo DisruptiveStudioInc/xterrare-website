@@ -39,6 +39,13 @@ $Soon_Description2 = "Connect on Zoom 07:00 p.m. (CDMX)";
 $Soon_Description3 = "You can't miss it!";
 
 //-------------------------//
+// Not found
+//-------------------------//
+
+$notFound = "Sorry, the page does not exist.";
+$notFound_btn = "Go home";
+
+//-------------------------//
 // Hero
 //-------------------------//
 

@@ -13,7 +13,7 @@
     <div class="med-fd-col <?php echo $Condicion_1; ?>">
       <div class="w-50 small-w-100 small-jc-center <?php echo $Condicion; ?>">
 
-        <img src="./images/logo/logo-light.svg" class="mw-200 med-m-center" alt="<?= $Company_Fullname; ?>">
+        <img src="/images/logo/logo-light.svg" class="mw-200 med-m-center" alt="<?= $Company_Fullname; ?>">
         <ul class="fw-wrap med-jc-center g-10 mt-20">
           <li><a target="_blank" href="#" class="v-white icon small br-2 icon-facebook"></a></li>
           <li><a target="_blank" href="#" class="v-white icon small br-2 icon-instagram"></a></li>
@@ -57,8 +57,8 @@
 <!-- SCRIPTS -->
 <!-- ============================================== -->
 
-<script src="./js/lozad.min.js"></script>
-<script src="./js/script.js"></script>
+<script src="/js/lozad.min.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>
