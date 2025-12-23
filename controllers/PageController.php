@@ -13,6 +13,7 @@ class PageController extends BaseController {
   public function home($lang) {
     $this->setup($lang, 'home');
     $data = $this->loadPageData('home_data.php');
+    $data['floatBtn'] = 'default';
     $this->view('home', $data);
   }
 

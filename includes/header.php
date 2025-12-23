@@ -77,10 +77,10 @@
 </head>
 <body id="page-content">
 
-  <?php if($user_replica || (isset($floatBtn) && $floatBtn === 'founder')): ?>
+  <?php if($user_replica): ?>
     <div class="wrap-get">
       <a href="<?= $Register; ?>" target="_blank" class="btn-get">
-        <?= isset($floatBtn) && $floatBtn === 'founder' ? $Btn_founder : $Btn_started ?>
+        <?= $floatBtn === 'founder' ? $Btn_founder : $Btn_started ?>
       </a>
     </div>
   <?php endif; ?>
