@@ -4,13 +4,13 @@
     <button class="arrow down"></button>
 	</div>
   <div class="mw-1440 min-h-dhv ai-center jc-center g-60 med-g-30 med-fd-col med-pt-80">
-    <div class="w-50 med-w-100 med-t-c">
-      <h1 class="h1 tc-sec m-0"><?= $founderHero_title01 ?></h1>
-      <h2 class="h2 tc-acc fw-400 m-0"><?= $founderHero_title02 ?></h2>
+    <div class="w-40 med-w-100 med-t-c">
+      <h1 class="h2 tc-sec m-0"><?= $founderHero_title01 ?></h1>
+      <h2 class="h4 tc-acc fw-400 m-0"><?= $founderHero_title02 ?></h2>
       <p class="mt-40 mb-40 med-mt-20 med-mb-0 tc-0"><?= $founderHero_text ?></p>
-      <a href="#" target="_blank" class="btn c-sec br-30 med-d-none"><?= $founderHero_btn ?></a>
+      <a href="<?= $founder_buy ?>" target="_blank" class="btn c-sec br-30 med-d-none"><?= $founderHero_btn ?></a>
     </div>
-    <div class="w-50 med-w-100 t-c">
+    <div class="w-60 med-w-100 t-c">
       <div class="rel" style="padding-bottom:56.25%">
         <iframe
           src="https://player.vimeo.com/video/<?= $founder_vid; ?>?autopause=0&byline=0&fun=0&portrait=0&title=0"
@@ -90,17 +90,18 @@
       <img src="/images/body/the_spirit/1.webp" class="sticky br-20" style="top:120px" alt="name" loading="lazy"/>
     </div>
 
-    <img src="/images/body/the_spirit/benefits.webp" class="mw-500 m-center med-d-block d-none" alt="all products" loading="lazy"/>
+    <img src="/images/body/the_spirit/benefits.webp" class="mw-500 br-20 m-center med-d-block d-none" alt="all products" loading="lazy"/>
 
     <!-- Textos -->
     <div class="w-60 med-w-100">
-      <h2 class="h1 med-t-c"><?php echo $Spirit_title; ?></h2>
+      <h2 class="h2 med-t-c mb-40 med-mb-20"><?= $founderBenefits_title ?></h2>
+      <p><?= $founderBenefits_text ?></p>
       <?php foreach($founderBenefits as $item): ?>
         <article class="pt-10 pb-10">
           <h3 class="h5 mt-0"><?= $item['id'] ?>. <?= $item['title'] ?></h3>
           <ul>
             <?php foreach($item['list'] as $li): ?>
-              <li class="fw-300 tc-pri d-flex ai-start g-10">
+              <li class="tc-pri d-flex ai-start g-10">
                 <svg width="20" height="20" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.7 37.7L41 15.4C41.8 14.6 41.8 13.4 41 12.6C40.2 11.8 39 11.8 38.2 12.6L18.7 32.1L11.4 24.8C10.6 24 9.4 24 8.6 24.8C7.8 25.6 7.8 26.8 8.6 27.6L18.7 37.7Z" fill="currentcolor"/>
                 </svg>
@@ -133,7 +134,7 @@
           <h3 class="box-title h4 m-0"><?= $item['title']; ?></h3>
           <ul class="t-l w-100">
             <?php foreach($item['list'] as $li): ?>
-              <li class="fw-300 d-flex ai-start g-10">
+              <li class=" d-flex ai-start g-10">
                 <svg width="20" height="20" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.7 37.7L41 15.4C41.8 14.6 41.8 13.4 41 12.6C40.2 11.8 39 11.8 38.2 12.6L18.7 32.1L11.4 24.8C10.6 24 9.4 24 8.6 24.8C7.8 25.6 7.8 26.8 8.6 27.6L18.7 37.7Z" fill="currentcolor"/>
                 </svg>
@@ -155,19 +156,21 @@
     <button class="arrow down"></button>
 	</div>
 
-	<div class="mw-1280 min-h-dhv med-min-h-auto t-c d-flex fd-col ai-center jc-center small-pt-60 small-pb-60">
-		<h2 class="h1 tc-sec m-center mb-40 small-mb-20"><?= $founderSteps_title; ?></h2>
-    <p class="h5 tc-0"><?= $founderSteps_text ?></p>
-    <ul class="t-l mb-40 small-mb-20">
-      <?php foreach($steps_list as $item): ?>
-        <li class="fw-300 d-flex ai-start g-10 tc-0">
-          <svg width="20" height="20" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.7 37.7L41 15.4C41.8 14.6 41.8 13.4 41 12.6C40.2 11.8 39 11.8 38.2 12.6L18.7 32.1L11.4 24.8C10.6 24 9.4 24 8.6 24.8C7.8 25.6 7.8 26.8 8.6 27.6L18.7 37.7Z" fill="currentcolor"/>
-          </svg>
-          <?= $item ?>
-        </li>
-      <?php endforeach; ?>
-    </ul>
+	<div class="mw-1280 min-h-dhv med-min-h-auto d-flex fd-col ai-center jc-center small-pt-60 small-pb-60">
+		<h2 class="h1 t-c tc-sec m-center mb-40 small-mb-20"><?= $founderSteps_title; ?></h2>
+    <p class="h5 t-c tc-0"><?= $founderSteps_text ?></p>
+    <div class="t-c">
+      <ul class="t-l mb-40 small-mb-20">
+        <?php foreach($steps_list as $item): ?>
+          <li class=" d-flex ai-start g-10 tc-0">
+            <svg width="20" height="20" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.7 37.7L41 15.4C41.8 14.6 41.8 13.4 41 12.6C40.2 11.8 39 11.8 38.2 12.6L18.7 32.1L11.4 24.8C10.6 24 9.4 24 8.6 24.8C7.8 25.6 7.8 26.8 8.6 27.6L18.7 37.7Z" fill="currentcolor"/>
+            </svg>
+            <?= $item ?>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
     <div class="roadmap d-flex ai-center fd-col g-40 small-g-20 pt-60 small-pt-40">
       <?php foreach($steps as $item): ?>
         <article class="roadmap-step p-30 small-p-20 br-20 small-br-10 w-60 small-w-100 z-index-1">
@@ -184,8 +187,8 @@
           <?php if(isset($item['list'])): ?>
             <ul>
               <?php foreach($item['list'] as $li): ?>
-                <li class="fw-300 d-flex ai-start g-10">
-                  <svg width="20" height="20" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="h5 d-flex ai-start g-10">
+                  <svg width="24" height="24" style="flex-shrink:0" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.7 37.7L41 15.4C41.8 14.6 41.8 13.4 41 12.6C40.2 11.8 39 11.8 38.2 12.6L18.7 32.1L11.4 24.8C10.6 24 9.4 24 8.6 24.8C7.8 25.6 7.8 26.8 8.6 27.6L18.7 37.7Z" fill="currentcolor"/>
                   </svg>
                   <?= $li ?>
@@ -211,7 +214,7 @@
 		<h3 class="h1 t-balance mt-0"><?= $founderFuture_title2 ?></h3>
 		<p class="h4"><?= $founderFuture_text1 ?></p>
 		<p class="h4 mt-0"><?= $founderFuture_text2 ?></p>
-		<a href="<?= $Login; ?>" class="btn big c-sec br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
+		<a href="<?= $founder_buy ?>" class="btn big c-sec br-50 mt-40 small-mt-20"><?= $Btn_live; ?></a>
 	</div>
 </section>
 
@@ -251,7 +254,7 @@
 
   <div class="mw-1280 t-c d-flex fd-col ai-center jc-center pt-200 pb-200 small-pt-100 small-pb-100">
     <h2 class="h1 tc-0 m-center mb-40 small-mb-20"><?= $founderBanner ?></h2>
-    <a href="<?= $Register; ?>" target="_blank" class="btn big c-pri br-50 m-0"><?= $founderBannerCta ?></a>
+    <a href="<?= $founder_buy ?>" target="_blank" class="btn big c-pri br-50 m-0"><?= $founderBannerCta ?></a>
   </div>
 </section>
 

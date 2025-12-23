@@ -273,8 +273,8 @@ $Footer_link_03 = "Política de Privacidad";
 // Founders
 //-------------------------//
 
-$founderHero_title01 = "Conviértete en inversionista fundador";
-$founderHero_title02 = "93 Terrenos Exclusivos, 93 Oportunidades Únicas";
+$founderHero_title01 = "Sé Fundador de la Primera Comunidad Sostenible de Baja California Sur, México";
+$founderHero_title02 = "Conviértete en inversionista fundador. 93 Terrenos Exclusivos, 93 Oportunidades Únicas";
 $founderHero_text = "Adquiere hoy en la \"Zona Origen\" desde $10,000 USD lo que mañana valdrá mas $50,000 USD. Ahorro inmediato de $40,000 + 50% descuento en titulación";
 $founderHero_btn = "Comprar lote fundador";
 $founderHero_note = "Proceso 100% seguro • Titulación garantizada • Financiamiento disponible";

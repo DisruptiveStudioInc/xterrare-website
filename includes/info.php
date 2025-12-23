@@ -1,11 +1,8 @@
 <?php
 
-// use Includes\Localization;
-
-// Access the global user_replica variable
-
 use Includes\Localization;
 
+// Access the global user_replica variable
 $user_replica = $GLOBALS['user_replica'] ?? null;
 
 $Current_lang = Localization::getLang();
@@ -102,6 +99,7 @@ $GLOBALS['Investments'] = $Investments;
 //-------------------------//
 
 $link_01 = "membership";
+$founder_buy = "https://vip.xterrareglobal.com/login";
 
 // $Register = "https://my.xterrare.com/register/$user_replica";
 // $Login    = "https://my.xterrare.com/login";
