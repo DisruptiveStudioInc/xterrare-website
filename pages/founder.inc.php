@@ -39,7 +39,7 @@
 
   <div class="rel d-flex fw-wrap">
     <div class="w-50 med-w-100 min-h-dhv med-min-h-60dvh sticky med-rel" style="top:0">
-      <img src="/images/body/about/mision.webp" alt="" class="background visible">
+      <img src="/images/body/founders/mision.webp" alt="" class="background visible">
     </div>
     <div class="w-50 med-w-100 p-60 small-p-20 small-pt-40 small-pb-40 fd-col jc-center">
       <h2 class="h3 mt-0 mb-30 small-mb-10"><?= $founderOportunity_title ?></h2>
@@ -87,10 +87,10 @@
   <div class="mw-1280 jc-center min-h-dhv med-h-0 g-60 med-g-40 fd-row-rev med-fd-col pt-80 pb-80 small-pt-50 small-pb-50">
 
     <div class="w-40 rel med-d-none">
-      <img src="/images/body/the_spirit/1.webp" class="sticky br-20" style="top:120px" alt="name" loading="lazy"/>
+      <img src="/images/body/founders/unnamed.webp" class="sticky br-20" style="top:120px" alt="name" loading="lazy"/>
     </div>
 
-    <img src="/images/body/the_spirit/benefits.webp" class="mw-500 br-20 m-center med-d-block d-none" alt="all products" loading="lazy"/>
+    <img src="/images/body/founders/unnamed_movil.webp" class="mw-500 br-20 m-center med-d-block d-none" alt="all products" loading="lazy"/>
 
     <!-- Textos -->
     <div class="w-60 med-w-100">
