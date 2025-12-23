@@ -8,9 +8,8 @@ use Includes\Localization;
 
 $user_replica = $GLOBALS['user_replica'] ?? null;
 
-$Actual_Page = !empty($_GET['p']) ? $_GET['p'] : '';
-$Actual_Page_Lan = $Actual_Page ? '&p=' . $Actual_Page : '';
-$Client_Page_Id = (empty($_GET['id'])) ? '' : '&id=' . $_GET['id'];
+$Current_lang = Localization::getLang();
+$Actual_Page = Localization::getCurrentUrl($Current_lang);
 $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 
 //-------------------------//
@@ -54,9 +53,9 @@ if (!function_exists('initLanguageVars')) {
 
     // Set MENU
     $GLOBALS['Menu'] = array(
-      array('#home','active',$Menu_01),
-      array('#exterrare','',$Menu_02),
-      array('#status','',$Menu_03),
+      array(Localization::url('home').'#home','',$Menu_01),
+      array(Localization::url('home').'#exterrare','',$Menu_02),
+      array(Localization::url('home').'#status','',$Menu_03),
     );
 
     // Set Footer Rights

@@ -78,12 +78,28 @@
 .h-full {
   height: 100%;
 }
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--drop-speed, 0.5s) ease-out;
+  &.open {
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 1081px) {
+  .sticky {
+    position: sticky;
+  }
+}
 @media only screen and (max-width: 1080px) {
   .med-min-h-auto {
     min-height: auto;
   }
   .med-min-h-60dvh {
     min-height: 60dvh;
+  }
+  .med-sticky {
+    position: sticky;
   }
 }
 
@@ -523,6 +539,13 @@ section {
 .box {
   max-width: calc(49.5% - 20px);
   box-shadow: 0 20px 40px var(--color-glow);
+}
+
+.box.box_founder {
+  max-width: calc(33.3% - 30px);
+  @media only screen and (max-width: 1080px) {
+    max-width: 640px;
+  }
 }
 
 .box-title {
@@ -2043,4 +2066,57 @@ ul.textos li span img {
       transition: none;
     }
   }
+}
+
+/* ============================================== */
+/* ROADMAP */
+/* ============================================== */
+
+.roadmap {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    translate: -1px 0;
+    background-color: var(--color-acc);
+  }
+  *:first-child {
+    margin-top: 0;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+.roadmap-text {
+  transition: color 250ms linear;
+}
+.roadmap-step {
+  background-color: var(--color-light);
+  transition-property: background-color, color;
+  transition: 250ms linear;
+  &:hover {
+    background-color: var(--color-sec);
+    * {
+      color: white;
+    }
+  }
+  @media only screen and (min-width: 1081px) {
+    translate: calc(33% * var(--dir, 1)) 0;
+    text-align: left;
+    &:nth-child(odd) {
+      --dir: -1;
+    }
+  }
+}
+
+/* ============================================== */
+/* DROPDOWN */
+/* ============================================== */
+
+.dropdown-head.open .dropdown-icon {
+  rotate: 45deg;
 }

@@ -77,9 +77,11 @@
 </head>
 <body id="page-content">
 
-  <?php if($user_replica): ?>
+  <?php if($user_replica || (isset($floatBtn) && $floatBtn === 'founder')): ?>
     <div class="wrap-get">
-      <a href="<?= $Register; ?>" target="_blank" class="btn-get"><?= $Btn_started; ?></a>
+      <a href="<?= $Register; ?>" target="_blank" class="btn-get">
+        <?= isset($floatBtn) && $floatBtn === 'founder' ? $Btn_founder : $Btn_started ?>
+      </a>
     </div>
   <?php endif; ?>
 
@@ -130,21 +132,6 @@
 
               foreach ($Menu as $item) {
                 $counter++;
-
-                // Primer item -> dinámico
-                if ($counter == 1) {
-                  // Si NO estamos en home ni vacío -> ir a "/"
-                  if ($Actual_Page !== '' && $Actual_Page !== 'home') {
-                    $item[0] = '/';
-                  } else {
-                    $item[0] = '#home';
-                  }
-                }
-
-                // Segundo y tercer item -> solo mostrar en "home" o vacío
-                if (in_array($counter, [2, 3]) && $Actual_Page !== '' && $Actual_Page !== 'home') {
-                  continue;
-                }
 
                 // Submenú con sub-sub (Menu 4) desactivado
                 if ($counter == 6) {

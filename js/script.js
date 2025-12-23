@@ -269,3 +269,34 @@ document.querySelectorAll(".section-arrows").forEach((arrows) => {
     if (prev) prev.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+/* ============================================== */
+/* DROPDOWNS */
+/* ============================================== */
+
+const dropdowns = document.querySelectorAll(".dropdown-head");
+const dropdownsWrap = document.querySelectorAll(".dropdowns-wrap");
+
+if (dropdowns.length > 0) {
+  if (dropdownsWrap.length > 0) {
+    dropdownsWrap.forEach((wrap) => {
+      wrap.addEventListener("click", (e) => {
+        console.log(e.target);
+        const target = e.target.closest(".dropdown-head");
+        console.log({ target });
+        if (!target) return;
+        target.classList.toggle("open");
+        const content = document.getElementById(target.dataset.target);
+        content.classList.toggle("open");
+      });
+    });
+  } else {
+    dropdowns.forEach((dropdown) => () => {
+      dropdown.addEventListener("click", () => {
+        dropdown.classList.toggle("open");
+        const content = document.getElementById(dropdown.dataset.target);
+        content.classList.toggle("open");
+      });
+    });
+  }
+}

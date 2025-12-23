@@ -18,8 +18,9 @@ class PageController extends BaseController {
 
   public function founder($lang) {
     $this->setup($lang, 'founder');
-    $this->view('founder');
-
+    $data = $this->loadPageData('founder_data.php');
+    $data['floatBtn'] = 'founder';
+    $this->view('founder', $data);
   }
 
   public function notFound() {
