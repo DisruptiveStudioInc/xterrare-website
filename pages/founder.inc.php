@@ -87,7 +87,7 @@
   <div class="mw-1280 jc-center min-h-dhv med-h-0 g-60 med-g-40 fd-row-rev med-fd-col pt-80 pb-80 small-pt-50 small-pb-50">
 
     <div class="w-40 rel med-d-none">
-      <img src="/images/body/founders/unnamed.webp" class="sticky br-20" style="top:120px" alt="name" loading="lazy"/>
+      <img src="/images/body/founders/founder-benefits.webp" class="sticky br-20" style="top:120px" alt="name" loading="lazy"/>
     </div>
 
     <img src="/images/body/founders/unnamed_movil.webp" class="mw-500 br-20 m-center med-d-block d-none" alt="all products" loading="lazy"/>
