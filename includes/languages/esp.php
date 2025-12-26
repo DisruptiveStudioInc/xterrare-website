@@ -295,7 +295,7 @@ $founderValue_item1_text = "Una inversión inicial con un potencial de apreciaci
 $founderValue_item2_title = "Opción de Fundador a Crédito";
 $founderValue_item2_price = "$18,000 USD";
 $founderValue_item2_text = "Plan especial flexible para maximizar tu capital.";
-$founderValue_item3_title = "Titulación Preferente";
+$founderValue_item3_title = "Escrituración";
 $founderValue_item3_price = "Con hasta 50% de Ahorro";
 $founderValue_item3_text = "Nuestro equipo legal gestionará toda tu escrituración con descuento exclusivo.";
 
@@ -353,7 +353,7 @@ $founderSteps_step2_text = "Acceso anticipado al mapa interactivo 3D con disponi
 $founderSteps_step3_title = "Paso 3: Elección de financiamiento";
 $founderSteps_step3_list1 = "Opción Fundador Diamante: $10,000 USD al contado (pago único).";
 $founderSteps_step3_list2 = "Opción Fundador Platino: $18,000 USD (desde $1.000 USD para reservar y $1.000 USD al mes durante 17 meses sin intereses).";
-$founderSteps_step4_title = "Paso 4: Titulación express";
+$founderSteps_step4_title = "Paso 4: Escrituración";
 $founderSteps_step4_text = "Nuestro equipo legal gestiona todo en 45 días con tu ahorro del 50%.";
 $founderSteps_step5_title = "Paso 5: Entrega de paquete fundador";
 $founderSteps_step5_text = "Recibe físicamente tu certificado, placa, NFT y beneficios.";

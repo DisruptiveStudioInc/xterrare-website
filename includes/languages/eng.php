@@ -293,7 +293,7 @@ $founderValue_item1_text = "An initial investment with an immediate appreciation
 $founderValue_item2_title = "Founder Credit Option";
 $founderValue_item2_price = "$18,000 USD";
 $founderValue_item2_text = "Special flexible plan to maximize your capital.";
-$founderValue_item3_title = "Preferential Titling";
+$founderValue_item3_title = "Titling";
 $founderValue_item3_price = "Up to 50% Savings";
 $founderValue_item3_text = "Our legal team will handle all your titling with an exclusive discount.";
 
@@ -351,7 +351,7 @@ $founderSteps_step2_text = "Early access to the 3D interactive map with real-tim
 $founderSteps_step3_title = "Step 3: Financing Choice";
 $founderSteps_step3_list1 = "Diamond Founder Option: $10,000 USD upfront (one-time payment).";
 $founderSteps_step3_list2 = "Platinum Founder Option: $18,000 USD (from $1,000 USD to reserve and $1,000 USD per month for 17 months without interest).";
-$founderSteps_step4_title = "Step 4: Express Titling";
+$founderSteps_step4_title = "Step 4: Titling";
 $founderSteps_step4_text = "Our legal team handles everything in 45 days with your 50% savings.";
 $founderSteps_step5_title = "Step 5: Founder Package Delivery";
 $founderSteps_step5_text = "Receive your certificate, plaque, NFT, and benefits physically.";
