@@ -275,7 +275,7 @@ $founderHero_title01 = "Be a Founder of the First Sustainable Community in Baja 
 $founderHero_title02 = "Become a founding investor. 93 Exclusive Lots, 93 Unique Opportunities";
 $founderHero_text = "Acquire today in the \"Origin Zone\" from $10,000 USD what will be worth over $50,000 USD tomorrow. Immediate savings of $40,000 + 50% discount on titling";
 $founderHero_btn = "Buy founder lot";
-$founderHero_note = "100% secure process • Guaranteed titling • Financing available";
+$founderHero_note = "100% secure process • Titling • Financing available";
 
 $founderOportunity_title = "A Unique Opportunity in the History of Latin American Real Estate Development";
 $founderOportunity_text1 = "Dear Visionary Investor,";

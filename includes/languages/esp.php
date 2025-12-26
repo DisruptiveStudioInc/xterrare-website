@@ -277,7 +277,7 @@ $founderHero_title01 = "Sé Fundador de la Primera Comunidad Sostenible de Baja 
 $founderHero_title02 = "Conviértete en inversionista fundador. 93 Terrenos Exclusivos, 93 Oportunidades Únicas";
 $founderHero_text = "Adquiere hoy en la \"Zona Origen\" desde $10,000 USD lo que mañana valdrá mas $50,000 USD. Ahorro inmediato de $40,000 + 50% descuento en titulación";
 $founderHero_btn = "Comprar lote fundador";
-$founderHero_note = "Proceso 100% seguro • Titulación garantizada • Financiamiento disponible";
+$founderHero_note = "Proceso 100% seguro • Escrituración • Financiamiento disponible";
 
 $founderOportunity_title = "Una Oportunidad Única en la Historia del Desarrollo Inmobiliario Latinoamericano";
 $founderOportunity_text1 = "Estimado Inversionista Visionario,";
