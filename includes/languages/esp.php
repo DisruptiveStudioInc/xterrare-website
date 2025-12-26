@@ -275,7 +275,7 @@ $Footer_link_03 = "Política de Privacidad";
 
 $founderHero_title01 = "Sé Fundador de la Primera Comunidad Sostenible de Baja California Sur, México";
 $founderHero_title02 = "Conviértete en inversionista fundador. 93 Terrenos Exclusivos, 93 Oportunidades Únicas";
-$founderHero_text = "Adquiere hoy en la \"Zona Origen\" desde $10,000 USD lo que mañana valdrá mas $50,000 USD. Ahorro inmediato de $40,000 + 50% descuento en titulación";
+$founderHero_text = "Adquiere hoy en la \"Zona Origen\" desde $10,000 USD lo que mañana valdrá mas $50,000 USD. Ahorro inmediato de $40,000 + 50% descuento en escrituración";
 $founderHero_btn = "Comprar lote fundador";
 $founderHero_note = "Proceso 100% seguro • Escrituración • Financiamiento disponible";
 
@@ -295,7 +295,7 @@ $founderValue_item1_text = "Una inversión inicial con un potencial de apreciaci
 $founderValue_item2_title = "Opción de Fundador a Crédito";
 $founderValue_item2_price = "$18,000 USD";
 $founderValue_item2_text = "Plan especial flexible para maximizar tu capital.";
-$founderValue_item3_title = "Escrituración";
+$founderValue_item3_title = "Escrituración Preferente";
 $founderValue_item3_price = "Con hasta 50% de Ahorro";
 $founderValue_item3_text = "Nuestro equipo legal gestionará toda tu escrituración con descuento exclusivo.";
 
@@ -329,7 +329,7 @@ $founderLegacy_subtitle1 = "¿Qué Estás Adquiriendo Exactamente?";
 $founderLegacy_text1 = "Un terreno con una posición fundacional en la comunidad sostenible más exclusiva de Baja California Sur. Cada lote en la \"Zona Origen\" incluye:";
 $founderLegacy_subtitle2 = "Características exclusivas";
 $founderLegacy_list1_1 = "Ubicación privilegiada: Vistas de 270° al Mar de Cortés.";
-$founderLegacy_list1_2 = "Título de propiedad real: Escrituración garantizada en 45 días.";
+$founderLegacy_list1_2 = "Título de propiedad real: Escrituración garantizada en 90 días.";
 $founderLegacy_list1_3 = "Diseño bioclimático: Asesoría personalizada sin costo.";
 $founderLegacy_list1_4 = "Acceso VIP: Entrada privada y amenities exclusivas.";
 $founderLegacy_subtitle3 = "Beneficios transformadores";
@@ -353,7 +353,7 @@ $founderSteps_step2_text = "Acceso anticipado al mapa interactivo 3D con disponi
 $founderSteps_step3_title = "Paso 3: Elección de financiamiento";
 $founderSteps_step3_list1 = "Opción Fundador Diamante: $10,000 USD al contado (pago único).";
 $founderSteps_step3_list2 = "Opción Fundador Platino: $18,000 USD (desde $1.000 USD para reservar y $1.000 USD al mes durante 17 meses sin intereses).";
-$founderSteps_step4_title = "Paso 4: Escrituración";
+$founderSteps_step4_title = "Paso 4: Escrituración Express";
 $founderSteps_step4_text = "Nuestro equipo legal gestiona todo en 45 días con tu ahorro del 50%.";
 $founderSteps_step5_title = "Paso 5: Entrega de paquete fundador";
 $founderSteps_step5_text = "Recibe físicamente tu certificado, placa, NFT y beneficios.";
