@@ -178,30 +178,26 @@
                 }
               }
             ?>
-            <?php if( !isset($floatBtn) || $floatBtn !== 'founder'): ?>
-              <div class="d-none med-d-block mt-20">
-                <div class="mb-10">
-                  <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
-                </div>
-                <?php if($user_replica): ?>
-                  <div>
-                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?php echo $Menu_reg; ?></a>
-                  </div>
-                <?php endif; ?>
+            <div class="d-none med-d-block mt-20">
+              <div class="mb-10">
+                <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?= $Menu_log; ?></a>
               </div>
-            <?php endif; ?>
+              <?php if($user_replica): ?>
+                <div>
+                  <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_register : $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?= $Menu_reg; ?></a>
+                </div>
+              <?php endif; ?>
+            </div>
           </ul>
         </div>
 
         <div class="jc-center ai-center">
-          <?php if( !isset($floatBtn) || $floatBtn !== 'founder'): ?>
-            <div class="btns m-0 g-10 med-d-none">
-              <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
-              <?php if($user_replica): ?>
-                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-sec br-30"><?php echo $Menu_reg; ?></a>
-              <?php endif; ?>
-            </div>
-          <?php endif; ?>
+          <div class="btns m-0 g-10 med-d-none">
+            <a href='<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Login; ?>' target="_blank" class="btn c-ter br-30"><?= $Menu_log; ?></a>
+            <?php if($user_replica): ?>
+              <a href='<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_register : $Register; ?>' target="_blank" class="btn c-sec br-30"><?= $Menu_reg; ?></a>
+            <?php endif; ?>
+          </div>
           <div class="hamburguer">
             <span></span>
             <span></span>

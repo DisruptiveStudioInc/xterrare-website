@@ -88,7 +88,7 @@ $Investments = array(
 // GENERAL
 //-------------------------//
 
-$Host_Site      = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
+$Host_Site = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
 
 // Make these available globally
 $GLOBALS['Host_Site'] = $Host_Site;
@@ -100,11 +100,10 @@ $GLOBALS['Investments'] = $Investments;
 
 $link_01 = "membership";
 $founder_buy = "https://vip.xterrareglobal.com/login";
+$founder_register = "https://vip.xterrareglobal.com/register/$user_replica";
 
-// $Register = "https://my.xterrare.com/register/$user_replica";
-// $Login    = "https://my.xterrare.com/login";
-$Register = "#";
-$Login    = "#";
+$Register = "https://my.xterrareglobal.com/register/$user_replica";
+$Login    = "https://my.xterrareglobal.com/login";
 
 $ref = isset($user_replica) ? "?ref=$user_replica" : '';
 
