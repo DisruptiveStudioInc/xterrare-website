@@ -329,7 +329,7 @@ $founderLegacy_subtitle1 = "¿Qué Estás Adquiriendo Exactamente?";
 $founderLegacy_text1 = "Un terreno con una posición fundacional en la comunidad sostenible más exclusiva de Baja California Sur. Cada lote en la \"Zona Origen\" incluye:";
 $founderLegacy_subtitle2 = "Características exclusivas";
 $founderLegacy_list1_1 = "Ubicación privilegiada: Vistas de 270° al Mar de Cortés.";
-$founderLegacy_list1_2 = "Título de propiedad real: Escrituración garantizada en 90 días.";
+$founderLegacy_list1_2 = "Propiedad real garantía con título original.* 90 días.";
 $founderLegacy_list1_3 = "Diseño bioclimático: Asesoría personalizada sin costo.";
 $founderLegacy_list1_4 = "Acceso VIP: Entrada privada y amenities exclusivas.";
 $founderLegacy_subtitle3 = "Beneficios transformadores";
@@ -354,7 +354,7 @@ $founderSteps_step3_title = "Paso 3: Elección de financiamiento";
 $founderSteps_step3_list1 = "Opción Fundador Diamante: $10,000 USD al contado (pago único).";
 $founderSteps_step3_list2 = "Opción Fundador Platino: $18,000 USD (desde $1.000 USD para reservar y $1.000 USD al mes durante 17 meses sin intereses).";
 $founderSteps_step4_title = "Paso 4: Escrituración Express";
-$founderSteps_step4_text = "Nuestro equipo legal gestiona todo en 45 días con tu ahorro del 50%.";
+$founderSteps_step4_text = "Nuestro equipo legal gestiona todo en 90 días con tu ahorro del 50%.";
 $founderSteps_step5_title = "Paso 5: Entrega de paquete fundador";
 $founderSteps_step5_text = "Recibe físicamente tu certificado, placa, NFT y beneficios.";
 

@@ -327,7 +327,7 @@ $founderLegacy_subtitle1 = "What Exactly Are You Acquiring?";
 $founderLegacy_text1 = "A lot with a foundational position in the most exclusive sustainable community in Baja California Sur. Each lot in the \"Origin Zone\" includes:";
 $founderLegacy_subtitle2 = "Exclusive Features";
 $founderLegacy_list1_1 = "Privileged location: 270° views of the Sea of Cortez.";
-$founderLegacy_list1_2 = "Real property title: Guaranteed titling within 90 days.";
+$founderLegacy_list1_2 = "Real property guarantee with original title.* 90 days.";
 $founderLegacy_list1_3 = "Bioclimatic design: Personalized advice at no cost.";
 $founderLegacy_list1_4 = "VIP access: Private entrance and exclusive amenities.";
 $founderLegacy_subtitle3 = "Transformative Benefits";
@@ -352,7 +352,7 @@ $founderSteps_step3_title = "Step 3: Financing Choice";
 $founderSteps_step3_list1 = "Diamond Founder Option: $10,000 USD upfront (one-time payment).";
 $founderSteps_step3_list2 = "Platinum Founder Option: $18,000 USD (from $1,000 USD to reserve and $1,000 USD per month for 17 months without interest).";
 $founderSteps_step4_title = "Step 4: Express Titling";
-$founderSteps_step4_text = "Our legal team handles everything in 45 days with your 50% savings.";
+$founderSteps_step4_text = "Our legal team handles everything in 90 days with your 50% savings.";
 $founderSteps_step5_title = "Step 5: Founder Package Delivery";
 $founderSteps_step5_text = "Receive your certificate, plaque, NFT, and benefits physically.";
 
