@@ -27,7 +27,7 @@ $Btn_start = "Únete hoy";
 $Btn_store = "Visita nuestra tienda";
 $Btn_live = "Empieza ya";
 $Btn_part = "Inicia HOY";
-$Btn_started = "Descrubre {$Company_Name}";
+$Btn_started = "Descubre {$Company_Name}";
 $Btn_founder = "Comprar lote";
 
 //-------------------------//
