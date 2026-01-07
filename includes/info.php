@@ -84,15 +84,36 @@ $Investments = array(
   ]
 );
 
+$FounderPacks = array(
+  'diamond' => [
+    'price' => 10000,
+    'area' => 500,
+    'discount' => 50,
+    'years' => 5,
+    'modality' => 1
+  ],
+  'platinum' => [
+    'price' => 18000,
+    'area' => 500,
+    'discount' => 50,
+    'years' => 5,
+    'modality' => 18
+  ]
+);
+
 //-------------------------//
 // GENERAL
 //-------------------------//
 
-$Host_Site = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
+$isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ||
+  ($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https';
+$protocol = $isHttps ? "https" : "http";
+$Host_Site = $protocol . "://" . $_SERVER["HTTP_HOST"];
 
 // Make these available globally
 $GLOBALS['Host_Site'] = $Host_Site;
 $GLOBALS['Investments'] = $Investments;
+$GLOBALS['FounderPacks'] = $FounderPacks;
 
 //-------------------------//
 // LINKS

@@ -24,6 +24,13 @@ class PageController extends BaseController {
     $this->view('founder', $data);
   }
 
+  public function packages($lang) {
+    $this->setup($lang, 'packages');
+    $data = $this->loadPageData('packages_data.php');
+    $data['floatBtn'] = 'packages';
+    $this->view('packages', $data);
+  }
+
   public function notFound() {
     http_response_code(404);
     include __DIR__ . '/../pages/404.inc.php';

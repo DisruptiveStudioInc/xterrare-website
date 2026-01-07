@@ -392,3 +392,150 @@ $founderBannerCta = "Buy now";
 $founderPD1 = "P.S.: Imagine yourself in 3 years explaining how you acquired land in the most exclusive community in Baja California for 20% of its value... or will you be imagining how you missed that opportunity. The decision is yours, but the window is tiny.";
 $founderPD2 = "P.P.S.: True investors understand that unique opportunities are not announced twice. This is your moment. This is your window. This is your lot.";
 $founderPD3 = "P.P.P.S.: The 93 founders will be remembered as the visionaries who started the movement of premium sustainable communities in Latin America. Will your name be among them?";
+
+//-------------------------//
+// Packages
+//-------------------------//
+
+$packsHero1 = "Choose Your Adventure Towards the Future: How Do You Want to Be a Founder?";
+$packsHero2 = "Congratulations! You Have Found the Hidden Treasure";
+
+$packsPathTitle = "Choose Your Path as a Founder";
+$packsPathSubtitle = "Two Ways Towards the Same Legacy";
+
+$packsPath1_title = "Diamond Founder Option";
+$packsPath1_text = "Vision and efficiency";
+$packsPath2_title = "Platinum Founder Option";
+$packsPath2_text = "Wisdom and accessibility";
+
+$packsDiamond_name = "Diamond Founder";
+$packsDiamond_text1 = "For those who value simplicity, maximum savings, and decisive action.";
+$packsDiamond_investment = sprintf("Your investment: %s USD",
+  formatCurrency($FounderPacks['diamond']['price'])
+);
+$packsDiamond_text2 = "A single payment, total peace of mind.";
+$packsDiamond_item1Title = "Your Immediate Savings vs. Market Value:";
+$packsDiamond_item1Text = "Up to 83% discount on the commercial value of equivalent land in the area.";
+$packsDiamond_item2Title = "For your strategic mind:";
+$packsDiamond_item2Text = "It's like acquiring a masterpiece from an emerging artist at studio price, knowing its gallery value is five times higher. It's not \"speculative\" gain; it's a deep discount for early vision.";
+
+$packsPlatinum_name = "Platinum Founder";
+$packsPlatinum_text1 = "For those who prefer intelligent flexibility without compromising Founder status.";
+$packsPlatinum_investment = sprintf("Your investment: %s USD",
+  formatCurrency($FounderPacks['platinum']['price'])
+);
+$packsPlatinum_text2 = "Distributed in monthly payments for your convenience.";
+$packsPlatinum_item1Title = "Your Path:";
+$packsPlatinum_item1Text = "Today: $1,000 USD to secure your exclusive spot. The next 17 months: $1,000 USD monthly.";
+$packsPlatinum_item2Title = "Your Savings vs. Market Value:";
+$packsPlatinum_item2Text = "Approximately 70% discount on commercial value, while enjoying all the privileges of being a Platinum Founder.";
+$packsPlatinum_item3Title = "For your astute planning:";
+$packsPlatinum_item3Text = "It's like reserving a suite in the most exclusive boutique hotel before its opening, paying a monthly fraction while already enjoying the benefits of being a founding member.";
+
+$packCompareTitle = "Comparison Table";
+$packCompareSubtitle = "The value you acquire";
+
+$packTable_th1 = "Founder Benefit";
+$packTable_th2 = "Diamond Founder";
+$packTable_th3 = "Platinum Founder";
+$packTable_th4 = "What it means for you";
+$packTable_i1c1 = "Land in \"Origin Zone\"";
+$packTable_i1c2 = sprintf("%s m² average",
+  formatCurrency($FounderPacks['diamond']['area'])
+);
+$packTable_i1c3 = sprintf("%s m² average",
+  formatCurrency($FounderPacks['platinum']['area'])
+);
+$packTable_i1c4 = "Generous area in the most exclusive sector of the development";
+$packTable_i2c1 = "Private VIP Sector";
+$packTable_i2c2 = "Full access";
+$packTable_i2c3 = $packTable_i2c2;
+$packTable_i2c4 = "Location with the best views and maximum privacy";
+$packTable_i3c1 = "Commemorative Plaque";
+$packTable_i3c2 = "Included";
+$packTable_i3c3 = $packTable_i3c2;
+$packTable_i3c4 = "Permanent recognition as a Founder in the main viewpoint";
+$packTable_i4c1 = "Founder Certificate";
+$packTable_i4c2 = "Tokenized (NFT)";
+$packTable_i4c3 = $packTable_i4c2;
+$packTable_i4c4 = "Blockchain digital certification of your foundational position";
+$packTable_i5c1 = "Savings on Titling";
+$packTable_i5c2 = "{$FounderPacks['diamond']['discount']}% discount";
+$packTable_i5c3 = "{$FounderPacks['platinum']['discount']}% discount";
+$packTable_i5c4 = "Half the cost on all notarial and legal procedures";
+$packTable_i6c1 = "Bioclimatic Design";
+$packTable_i6c2 = "Personalized advice";
+$packTable_i6c3 = $packTable_i6c2;
+$packTable_i6c4 = "Expert guidance for your future sustainable home at no additional cost";
+$packTable_i7c1 = "Founders Club";
+$packTable_i7c2 = "Lifetime access";
+$packTable_i7c3 = $packTable_i7c2;
+$packTable_i7c4 = "Exclusive network with the other 92 visionaries and private events";
+$packTable_i8c1 = "Maintenance Exemption";
+$packTable_i8c2 = "{$FounderPacks['diamond']['discount']}% ({$FounderPacks['diamond']['years']} years)";
+$packTable_i8c3 = "{$FounderPacks['platinum']['discount']}% ({$FounderPacks['platinum']['years']} years)";
+$packTable_i8c4 = "Significant savings on common area maintenance costs";
+$packTable_i9c1 = "Lot Selection";
+$packTable_i9c2 = "High priority";
+$packTable_i9c3 = "Medium-high priority";
+$packTable_i9c4 = "Preferred option to choose among the best locations";
+$packTable_i10c1 = "Founder Price";
+$packTable_i10c2 = sprintf("%s USD",
+  formatCurrency($FounderPacks['diamond']['price'])
+);
+$packTable_i10c3 = sprintf("%s USD",
+  formatCurrency($FounderPacks['platinum']['price'])
+);
+$packTable_i10c4 = "Exclusive discount that will never be repeated";
+$packTable_i11c1 = "Payment Modality";
+$packTable_i11c2 = "Single payment";
+$packTable_i11c3 = "{$FounderPacks['platinum']['modality']} monthly payments";
+$packTable_i11c4 = "Flexibility according to your financial strategy";
+
+$packBenefitsTitle = "The benefits that define your smart decision";
+$packBenefitsText = "What both paths offer you";
+$packBenefit1_title = "Privileged Geographic Position";
+$packBenefit1_text = "Land in the \"Origin Zone\" with 270° panoramic views of the Sea of Cortez.";
+$packBenefit2_title = "Recognition as a Pioneer";
+$packBenefit2_text = "Inclusion in the \"Founders Wall\" and historical project materials.";
+$packBenefit3_title = "Exclusive Community";
+$packBenefit3_text = "Interaction with 92 other individuals and families who share your vision.";
+$packBenefit4_title = "Value Certifications";
+$packBenefit4_text = "Project designed under international WELL and EarthCheck standards.";
+$packBenefit5_title = "Guaranteed Titling";
+$packBenefit5_text = "Complete legal process with 50% savings on all procedures.";
+$packBenefit6_title = "Preferential Access";
+$packBenefit6_text = "Priority rights in future phases and developments of XTERRARE GLOBAL.";
+
+$packVisionTitle = "Which path best reflects your vision?";
+$packVision1_title = "Choose DIAMOND FOUNDER if...";
+$packVision1_item1 = "You value maximum efficiency in your investment decisions.";
+$packVision1_item2 = "You prefer simple and complete transactions.";
+$packVision1_item3 = "You understand the value of volume savings (deeper discount).";
+$packVision1_item4 = "You want maximum peace of mind with a single move.";
+$packVision1_item5 = "Your style is decisive and direct.";
+$packVision2_title = "Choose PLATINUM FOUNDER if...";
+$packVision2_item1 = "You appreciate strategic flexibility in your commitments.";
+$packVision2_item2 = "You prefer to distribute your investment while maintaining all privileges.";
+$packVision2_item3 = "You value starting today with an accessible commitment.";
+$packVision2_item4 = "Your approach is planned and sustainable over time.";
+$packVision2_item5 = "You want maximum control over your cash flow.";
+
+$packDecisionTitle = "What you are really deciding today";
+$packDecisionText1 = "This choice is not about numbers; it's about how you want to position your legacy:";
+$packDecisionOl1 = "You are acquiring access, not just land.";
+$packDecisionOl2 = "You are securing position, not just making a purchase.";
+$packDecisionOl3 = "You are building relationships, not just acquiring square meters.";
+$packDecisionOl4 = "You are defining your circle, not just choosing neighbors.";
+$packDecisionOl5 = "You are making history, not just a transaction.";
+$packDecisionText2 = "Remember this about your decision";
+$packDecisionUl1 = "Only 93 people in the world will have this title.";
+$packDecisionUl2 = "Land will never be offered under these conditions again.";
+$packDecisionUl3 = "Both options grant you the same Founder status.";
+$packDecisionUl4 = "Your intelligence has already brought you here.";
+$packDecisionUl5 = "Your vision is what defines the next step.";
+
+$packFinalText1 = "Reaching this page is no coincidence. It is evidence that you possess the insight to recognize value where others only see cost. While most wait for obvious opportunities, you are evaluating what truly matters: the essence of an exceptional property.";
+$packFinalText2 = "This is not a decision about \"how much you earn.\" It is a decision about how much value you acquire, how much you save today on an opportunity that will be unattainable tomorrow, and what kind of legacy you position yourself in.";
+$packFinalText3 = "You have identified what few see: the intrinsic value of being a Founder in the most exclusive sustainable development in Baja California Sur. Now, choose how you want to make it yours.";
+$packFinalPD = "P.S.: It doesn't matter which one you choose... Tomorrow you will be happy you did! Because both paths lead to the same treasure: being a Founder of Tierra Nuestra.";

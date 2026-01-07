@@ -24,6 +24,13 @@ class Localization {
       ],
       'handler' => 'PageController@founder'
     ],
+    'packages' => [
+      'languages' => [
+        'es' => '/paquetes',
+        'en' => '/en/packages'
+      ],
+      'handler' => 'PageController@packages'
+    ],
     'product' => [
       'languages' => [
         'es' => '/producto/{id}',
@@ -94,6 +101,7 @@ class Localization {
       $Company_Name = $GLOBALS['Company_Name'] ?? 'XTERRARE';
       $Company_Fullname = $GLOBALS['Company_Fullname'] ?? 'XTERRARE GLOBAL';
       $Investments = $GLOBALS['Investments'] ?? [];
+      $FounderPacks = $GLOBALS['FounderPacks'] ?? [];
 
       // Include the language file - variables will be defined in local scope
       include $langPath;
