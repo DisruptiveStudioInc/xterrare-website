@@ -64,7 +64,7 @@
           <p class="h4 fw-700 m-0"><?= $packsDiamond_investment ?></p>
           <p class="h5 fw-400 m-0"><?= $packsDiamond_text2 ?></p>
         </div>
-        <ul class="d-flex fd-col g-20">
+        <ul class="d-flex fd-col g-20 mb-40 med-mb-20">
           <?php foreach($packDiamondItems as $item): ?>
             <li>
               <div class="d-flex ai-start fw-row g-10">
@@ -77,6 +77,11 @@
             </li>
           <?php endforeach; ?>
         </ul>
+        <div class="w-100 t-l med-t-c">
+          <a href="<?= $founder_register ?>" target="_blank" class="btn c-pri br-50">
+            <?= $Btn_packages ?>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -93,7 +98,7 @@
           <p class="h4 fw-700 m-0"><?= $packsPlatinum_investment ?></p>
           <p class="h5 fw-400 m-0"><?= $packsPlatinum_text2 ?></p>
         </div>
-        <ul class="d-flex fd-col g-20">
+        <ul class="d-flex fd-col g-20 mb-40 med-mb-20">
           <?php foreach($packPlatinumItems as $item): ?>
             <li>
               <div class="d-flex ai-start fw-row g-10">
@@ -106,6 +111,11 @@
             </li>
           <?php endforeach; ?>
         </ul>
+        <div class="w-100 t-l med-t-c">
+          <a href="<?= $founder_register ?>" target="_blank" class="btn c-sec br-50">
+            <?= $Btn_packages ?>
+          </a>
+        </div>
       </div>
     </div>
     <div class="w-50 med-w-100 med-min-h-60dvh rel">
@@ -120,7 +130,7 @@
     <h2 class="h1-special t-c mt-0"><?= $packCompareTitle ?></h2>
     <p class="h2 t-c fw-700 mt-0 mb-50 med-mb-30"><?= $packCompareSubtitle ?></p>
 
-    <table class="of-h br-10">
+    <table class="of-h br-10 mb-50 med-mb-30">
       <thead>
         <?php foreach ($packTable['head'] as $th): ?>
           <th class="fw-700"><?= $th ?></th>
@@ -136,6 +146,12 @@
         <?php endforeach; ?>
       </tbody>
     </table>
+
+    <div class="w-100 t-c">
+      <a href="<?= $founder_register ?>" target="_blank" class="btn big c-sec br-50">
+        <?= $Btn_packages ?>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -197,15 +213,20 @@
           </li>
         <?php endforeach; ?>
       </ol>
-      <div class="c-acc-d br-10 p-20">
+      <div class="c-acc-d br-10 p-20 mb-40 med-mb-30">
         <p class="h5 fw-700 mt-0"><?= $packDecisionText2 ?></p>
-        <ul style="list-style:disc;padding-left:20px" class="d-flex fd-col g-10 mb-20">
+        <ul style="list-style:disc;padding-left:20px" class="d-flex fd-col g-10">
           <?php foreach ($packDecisionList2 as $item): ?>
             <li class="">
               <?= $item ?>
             </li>
           <?php endforeach; ?>
         </ul>
+      </div>
+      <div class="w-100 med-t-c">
+        <a href="<?= $founder_register ?>" target="_blank" class="btn c-sec br-50">
+          <?= $Btn_packages ?>
+        </a>
       </div>
     </div>
     <div class="w-50 med-w-100">

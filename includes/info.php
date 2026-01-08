@@ -120,8 +120,9 @@ $GLOBALS['FounderPacks'] = $FounderPacks;
 //-------------------------//
 
 $link_01 = "membership";
+$founder_replica = ($user_replica) ? $user_replica : 'master';
 $founder_buy = "https://vip.xterrareglobal.com/login";
-$founder_register = "https://vip.xterrareglobal.com/register/$user_replica";
+$founder_register = "https://vip.xterrareglobal.com/register/$founder_replica";
 
 $Register = "https://my.xterrareglobal.com/register/$user_replica";
 $Login    = "https://my.xterrareglobal.com/login";

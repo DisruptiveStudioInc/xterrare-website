@@ -2,11 +2,11 @@
 
 $packSlider = array(
   [
-    'image' => '/images/body/founders/map1.webp',
-    'alt' => 'Zona 1'
+    'image' => '/images/body/founders/zona_vip.webp',
+    'alt' => 'Zona VIP'
   ],
   [
-    'image' => '/images/body/founders/map2.webp',
+    'image' => '/images/body/founders/area_vip.webp',
     'alt' => 'Area VIP'
   ]
 );

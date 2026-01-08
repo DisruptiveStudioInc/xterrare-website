@@ -80,24 +80,24 @@
   <?php if($user_replica ||
     (isset($floatBtn) && $floatBtn === 'founder') ||
     (isset($floatBtn) && $floatBtn === 'packages')):
-    $floatText = $Btn_started;
+    $floatLink = $Register;
     if(isset($floatBtn)){
       switch ($floatBtn) {
         case 'founder':
-          $floatText = $Btn_founder;
+          $floatLink = \Includes\Localization::url('packages');
           break;
         case 'packages':
-          $floatText = $Btn_packages;
+          $floatLink = $founder_register;
           break;
         default:
-          $floatText = $Btn_started;
+          $floatLink = $Register;
           break;
       }
     }
   ?>
     <div class="wrap-get w-100 t-c">
-      <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Register; ?>" target="_blank" class="btn-get">
-        <?= $floatText ?>
+      <a href="<?= $floatLink; ?>" target="_blank" class="btn-get">
+        <?= (isset($floatBtn) && ($floatBtn === 'packages' || $floatBtn === 'founder')) ? $Btn_founder : $Btn_started; ?>
       </a>
     </div>
   <?php endif; ?>
@@ -197,11 +197,11 @@
             ?>
             <div class="d-none med-d-block mt-20">
               <div class="mb-10">
-                <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?= $Menu_log; ?></a>
+                <a href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?= $Menu_log; ?></a>
               </div>
-              <?php if($user_replica): ?>
+              <?php if($user_replica || (isset($floatBtn) && $floatBtn !== 'default')): ?>
                 <div>
-                  <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_register : $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?= $Menu_reg; ?></a>
+                  <a href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?= $Menu_reg; ?></a>
                 </div>
               <?php endif; ?>
             </div>
@@ -210,9 +210,9 @@
 
         <div class="jc-center ai-center">
           <div class="btns m-0 g-10 med-d-none">
-            <a href='<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Login; ?>' target="_blank" class="btn c-ter br-30"><?= $Menu_log; ?></a>
-            <?php if($user_replica): ?>
-              <a href='<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_register : $Register; ?>' target="_blank" class="btn c-sec br-30"><?= $Menu_reg; ?></a>
+            <a href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>' target="_blank" class="btn c-ter br-30"><?= $Menu_log; ?></a>
+            <?php if($user_replica || (isset($floatBtn) && $floatBtn !== 'default')): ?>
+              <a href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register; ?>' target="_blank" class="btn c-sec br-30"><?= $Menu_reg; ?></a>
             <?php endif; ?>
           </div>
           <div class="hamburguer">
