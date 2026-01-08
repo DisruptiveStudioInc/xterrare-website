@@ -15,6 +15,8 @@
   --color-ter-h: #065868;
   --color-acc-h: #c7893e;
 
+  --color-acc-d: #d6c69d;
+
   --color-basic: #0dbced;
   --color-premium: #677d8c;
   --color-black: #000000;
@@ -63,6 +65,9 @@
 .flex-grow {
   flex-grow: 1;
 }
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
 .pointer-e-none {
   pointer-events: none;
 }
@@ -77,6 +82,9 @@
 }
 .h-full {
   height: 100%;
+}
+.h-dvh {
+  height: 100dvh;
 }
 .wrapper {
   display: grid;
@@ -98,6 +106,9 @@
   .med-min-h-60dvh {
     min-height: 60dvh;
   }
+  .med-min-h-40dvh {
+    min-height: 40dvh;
+  }
   .med-sticky {
     position: sticky;
   }
@@ -118,6 +129,9 @@
 }
 .c-acc {
   background: var(--color-acc);
+}
+.c-acc-d {
+  background: var(--color-acc-d);
 }
 .c-b-dark {
   background: var(--color-brand-dark);
@@ -160,6 +174,13 @@
 }
 .tc-b-dark {
   color: var(--color-brand-dark);
+}
+
+.border-pri {
+  border-color: var(--color-pri);
+}
+.border-sec {
+  border-color: var(--color-sec);
 }
 
 body {
@@ -2119,4 +2140,46 @@ ul.textos li span img {
 
 .dropdown-head.open .dropdown-icon {
   rotate: 45deg;
+}
+
+/* ============================================== */
+/* PACKAGES - INNER PAGE */
+/* ============================================== */
+
+.packinfo-wrap {
+  max-width: 600px;
+  @media only screen and (min-width: 1440px) {
+    max-width: 720px;
+  }
+}
+
+.pack-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  @media only screen and (min-width: 980px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (min-width: 1081px) {
+    gap: 40px;
+  }
+}
+
+.pack-benefit-number {
+  --size: 36px;
+  width: var(--size);
+  height: var(--size);
+  line-height: 1;
+  @media only screen and (min-width: 769px) {
+    --size: 50px;
+  }
+}
+
+.package-choose {
+  border-width: 3px;
+  border-style: solid;
+  transition: box-shadow 250ms ease;
+  &:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+  }
 }

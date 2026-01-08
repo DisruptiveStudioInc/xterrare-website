@@ -29,6 +29,7 @@ $Btn_live = "Start now";
 $Btn_part = "Begin TODAY";
 $Btn_started = "Discover {$Company_Name}";
 $Btn_founder = "Buy lot";
+$Btn_packages = "Reserve my land today";
 
 //-------------------------//
 // Coming Soon
@@ -397,15 +398,15 @@ $founderPD3 = "P.P.P.S.: The 93 founders will be remembered as the visionaries w
 // Packages
 //-------------------------//
 
-$packsHero1 = "Choose Your Adventure Towards the Future: How Do You Want to Be a Founder?";
-$packsHero2 = "Congratulations! You Have Found the Hidden Treasure";
+$packsHero1 = "<span class='tc-acc'>Congratulations!</span> You Have Found the Hidden Treasure";
+$packsHero2 = "Choose Your Adventure Towards the Future:";
+$packsHero3 = "How Do You Want to Be a Founder?";
 
-$packsPathTitle = "Choose Your Path as a Founder";
+$packsPathTitle = "Choose Your Path as a <span class='tc-sec'>Founder</span>";
 $packsPathSubtitle = "Two Ways Towards the Same Legacy";
 
-$packsPath1_title = "Diamond Founder Option";
+$packsPathOption = "Option";
 $packsPath1_text = "Vision and efficiency";
-$packsPath2_title = "Platinum Founder Option";
 $packsPath2_text = "Wisdom and accessibility";
 
 $packsDiamond_name = "Diamond Founder";
@@ -508,13 +509,13 @@ $packBenefit6_title = "Preferential Access";
 $packBenefit6_text = "Priority rights in future phases and developments of XTERRARE GLOBAL.";
 
 $packVisionTitle = "Which path best reflects your vision?";
-$packVision1_title = "Choose DIAMOND FOUNDER if...";
+$packVisionChoose = "Choose";
+$packVisionIf = "if...";
 $packVision1_item1 = "You value maximum efficiency in your investment decisions.";
 $packVision1_item2 = "You prefer simple and complete transactions.";
 $packVision1_item3 = "You understand the value of volume savings (deeper discount).";
 $packVision1_item4 = "You want maximum peace of mind with a single move.";
 $packVision1_item5 = "Your style is decisive and direct.";
-$packVision2_title = "Choose PLATINUM FOUNDER if...";
 $packVision2_item1 = "You appreciate strategic flexibility in your commitments.";
 $packVision2_item2 = "You prefer to distribute your investment while maintaining all privileges.";
 $packVision2_item3 = "You value starting today with an accessible commitment.";
@@ -535,7 +536,8 @@ $packDecisionUl3 = "Both options grant you the same Founder status.";
 $packDecisionUl4 = "Your intelligence has already brought you here.";
 $packDecisionUl5 = "Your vision is what defines the next step.";
 
-$packFinalText1 = "Reaching this page is no coincidence. It is evidence that you possess the insight to recognize value where others only see cost. While most wait for obvious opportunities, you are evaluating what truly matters: the essence of an exceptional property.";
-$packFinalText2 = "This is not a decision about \"how much you earn.\" It is a decision about how much value you acquire, how much you save today on an opportunity that will be unattainable tomorrow, and what kind of legacy you position yourself in.";
-$packFinalText3 = "You have identified what few see: the intrinsic value of being a Founder in the most exclusive sustainable development in Baja California Sur. Now, choose how you want to make it yours.";
+$packFinalText1 = "<span class='tc-0'>Reaching this page is no coincidence.</span> It is evidence that you possess the insight to recognize value where others only see cost.";
+$packFinalText2 = "While most wait for obvious opportunities, you are evaluating what truly matters: the essence of an exceptional property.";
+$packFinalText3 = "This is not a decision about <span class='fw-700'>\"how much you earn.\"</span> It is a decision about how much value you acquire, how much you save today on an opportunity that will be unattainable tomorrow, and what kind of legacy you position yourself in.";
+$packFinalText4 = "<span class='fw-700'>You have identified what few see:</span> the intrinsic value of being a Founder in the most exclusive sustainable development in Baja California Sur. Now, choose how you want to make it yours.";
 $packFinalPD = "P.S.: It doesn't matter which one you choose... Tomorrow you will be happy you did! Because both paths lead to the same treasure: being a Founder of Tierra Nuestra.";

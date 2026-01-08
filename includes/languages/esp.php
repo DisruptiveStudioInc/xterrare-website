@@ -29,6 +29,7 @@ $Btn_live = "Empieza ya";
 $Btn_part = "Inicia HOY";
 $Btn_started = "Descubre {$Company_Name}";
 $Btn_founder = "Comprar lote";
+$Btn_packages = "Reservar mi terreno hoy";
 
 //-------------------------//
 // Coming Soon
@@ -399,15 +400,15 @@ $founderPD3 = "P.P. D.: Los 93 fundadores serán recordados como los visionarios
 // Packages
 //-------------------------//
 
-$packsHero1 = "Elige Tu Aventura Hacia el Futuro: ¿Cómo Quieres Ser Fundador?";
-$packsHero2 = "¡Felicidades! Has Encontrado el Tesoro Escondido";
+$packsHero1 = "<span class='tc-acc'>¡Felicidades!</span> Has Encontrado el Tesoro Escondido";
+$packsHero2 = "Elige Tu Aventura Hacia el Futuro:";
+$packsHero3 = "¿Cómo Quieres Ser Fundador?";
 
-$packsPathTitle = "Elige Tu Camino como Fundador";
+$packsPathTitle = "Elige Tu Camino como <span class='tc-sec'>Fundador</span>";
 $packsPathSubtitle = "Dos Vías Hacia el Mismo Legado";
 
-$packsPath1_title = "Opción fundador Diamante";
+$packsPathOption = "Opción";
 $packsPath1_text = "Visión y eficiencia";
-$packsPath2_title = "Opción fundador Platino";
 $packsPath2_text = "Sabiduría y accesibilidad";
 
 $packsDiamond_name = "Fundador Diamante";
@@ -510,13 +511,13 @@ $packBenefit6_title = "Acceso Preferente";
 $packBenefit6_text = "Derecho de prioridad en futuras fases y desarrollos de XTERRARE GLOBAL.";
 
 $packVisionTitle = "¿Cuál camino refleja mejor tu visión?";
-$packVision1_title = "Elige FUNDADOR DIAMANTE si...";
+$packVisionChoose = "Elige";
+$packVisionIf = "si...";
 $packVision1_item1 = "Valoras la eficiencia máxima en tus decisiones de inversión.";
 $packVision1_item2 = "Prefieres transacciones simples y completas.";
 $packVision1_item3 = "Entiendes el valor del ahorro por volumen (descuento más profundo).";
 $packVision1_item4 = "Quieres máxima tranquilidad con un solo movimiento.";
 $packVision1_item5 = "Tu estilo es decisivo y directo.";
-$packVision2_title = "Elige FUNDADOR PLATINO si...";
 $packVision2_item1 = "Aprecias la flexibilidad estratégica en tus compromisos.";
 $packVision2_item2 = "Prefieres distribuir tu inversión manteniendo todos los privilegios.";
 $packVision2_item3 = "Valoras empezar hoy con un compromiso accesible.";
@@ -537,7 +538,8 @@ $packDecisionUl3 = "Ambas opciones te otorgan el mismo estatus de Fundador.";
 $packDecisionUl4 = "Tu inteligencia ya te ha traído hasta aquí.";
 $packDecisionUl5 = "Tu visión es lo que define el siguiente paso.";
 
-$packFinalText1 = "Llegar a esta página no es casualidad. Es la evidencia de que posees la perspicacia para reconocer valor donde otros solo ven costo. Mientras la mayoría espera oportunidades obvias, tú estás evaluando lo que realmente importa: la esencia de una propiedad excepcional.";
-$packFinalText2 = "Esta no es una decisión sobre \"cuánto ganas\". Es una decisión sobre cuánto valor adquieres, cuánto ahorras hoy en una oportunidad que mañana será inalcanzable, y en qué tipo de legado te posicionas.";
-$packFinalText3 = "Has identificado lo que pocos ven: el valor intrínseco de ser Fundador en el desarrollo sostenible más exclusivo de Baja California Sur. Ahora, elige cómo quieres hacerlo tuyo.";
+$packFinalText1 = "<span class='tc-0'>Llegar a esta página no es casualidad.</span> Es la evidencia de que posees la perspicacia para reconocer valor donde otros solo ven costo.";
+$packFinalText2 = "Mientras la mayoría espera oportunidades obvias, tú estás evaluando lo que realmente importa: la esencia de una propiedad excepcional.";
+$packFinalText3 = "Esta no es una decisión sobre <span class='fw-700'>\"cuánto ganas\"</span>. Es una decisión sobre cuánto valor adquieres, cuánto ahorras hoy en una oportunidad que mañana será inalcanzable, y en qué tipo de legado te posicionas.";
+$packFinalText4 = "<span class='fw-700'>Has identificado lo que pocos ven:</span> el valor intrínseco de ser Fundador en el desarrollo sostenible más exclusivo de Baja California Sur. Ahora, elige cómo quieres hacerlo tuyo.";
 $packFinalPD = "P.D.: No importa cuál elijas... ¡Mañana estarás feliz de haberlo hecho! Porque ambos caminos te llevan al mismo tesoro: ser Fundador de Tierra Nuestra";

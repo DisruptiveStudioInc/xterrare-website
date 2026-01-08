@@ -77,10 +77,27 @@
 </head>
 <body id="page-content">
 
-  <?php if($user_replica || (isset($floatBtn) && $floatBtn === 'founder')): ?>
-    <div class="wrap-get">
+  <?php if($user_replica ||
+    (isset($floatBtn) && $floatBtn === 'founder') ||
+    (isset($floatBtn) && $floatBtn === 'packages')):
+    $floatText = $Btn_started;
+    if(isset($floatBtn)){
+      switch ($floatBtn) {
+        case 'founder':
+          $floatText = $Btn_founder;
+          break;
+        case 'packages':
+          $floatText = $Btn_packages;
+          break;
+        default:
+          $floatText = $Btn_started;
+          break;
+      }
+    }
+  ?>
+    <div class="wrap-get w-100 t-c">
       <a href="<?= (isset($floatBtn) && $floatBtn === 'founder') ? $founder_buy : $Register; ?>" target="_blank" class="btn-get">
-        <?= (isset($floatBtn) && $floatBtn === 'founder') ? $Btn_founder : $Btn_started ?>
+        <?= $floatText ?>
       </a>
     </div>
   <?php endif; ?>

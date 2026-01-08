@@ -2,23 +2,27 @@
 
 $packSlider = array(
   [
-    'image' => '',
-    'alt' => ''
+    'image' => '/images/body/founders/map1.webp',
+    'alt' => 'Zona 1'
   ],
   [
-    'image' => '',
-    'alt' => ''
+    'image' => '/images/body/founders/map2.webp',
+    'alt' => 'Area VIP'
   ]
 );
 
 $packPaths = array(
   [
-    'title' => $packsPath1_title,
-    'text' => $packsPath1_text
+    'color' => 'c-sec',
+    'title' => $packsDiamond_name,
+    'text' => $packsPath1_text,
+    'link' => '#diamond'
   ],
   [
-    'title' => $packsPath2_title,
-    'text' => $packsPath2_text
+    'color' => 'c-pri',
+    'title' => $packsPlatinum_name,
+    'text' => $packsPath2_text,
+    'link' => '#platinum'
   ],
 );
 
@@ -96,13 +100,15 @@ $packsCommonBenefits = array(
 
 $packChoose = array(
   [
-    'title' => $packVision1_title,
+    'color' => 'c-sec border-pri',
+    'title' => $packsDiamond_name,
     'list' => [
       $packVision1_item1, $packVision1_item2, $packVision1_item3, $packVision1_item4, $packVision1_item5
     ]
   ],
   [
-    'title' => $packVision2_title,
+    'color' => 'c-pri border-sec',
+    'title' => $packsPlatinum_name,
     'list' => [
       $packVision2_item1, $packVision2_item2, $packVision2_item3, $packVision2_item4, $packVision2_item5
     ]
