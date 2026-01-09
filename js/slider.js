@@ -16,6 +16,3 @@ function nextSlide() {
   currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
   showSlide(currentIndex);
 }
-
-// Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
