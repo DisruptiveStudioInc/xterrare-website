@@ -77,27 +77,10 @@
 </head>
 <body id="page-content">
 
-  <?php if($user_replica ||
-    (isset($floatBtn) && $floatBtn === 'founder') ||
-    (isset($floatBtn) && $floatBtn === 'packages')):
-    $floatLink = $Register;
-    if(isset($floatBtn)){
-      switch ($floatBtn) {
-        case 'founder':
-          $floatLink = \Includes\Localization::url('packages');
-          break;
-        case 'packages':
-          $floatLink = $founder_register;
-          break;
-        default:
-          $floatLink = $Register;
-          break;
-      }
-    }
-  ?>
+  <?php if($user_replica && (isset($floatBtn) && $floatBtn === 'default')): ?>
     <div class="wrap-get w-100 t-c">
-      <a href="<?= $floatLink; ?>" target="_blank" class="btn-get">
-        <?= (isset($floatBtn) && ($floatBtn === 'packages' || $floatBtn === 'founder')) ? $Btn_founder : $Btn_started; ?>
+      <a href="<?= $Register; ?>" target="_blank" class="btn-get">
+        <?= $Btn_started; ?>
       </a>
     </div>
   <?php endif; ?>

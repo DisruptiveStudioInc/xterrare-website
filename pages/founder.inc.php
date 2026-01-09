@@ -8,7 +8,7 @@
       <h1 class="h2 tc-sec m-0"><?= $founderHero_title01 ?></h1>
       <h2 class="h4 tc-acc fw-400 m-0"><?= $founderHero_title02 ?></h2>
       <p class="mt-40 mb-40 med-mt-20 med-mb-0 tc-0"><?= $founderHero_text ?></p>
-      <a href="<?= \Includes\Localization::url('packages') ?>" target="_blank" class="btn c-sec br-30 med-d-none"><?= $founderHero_btn ?></a>
+      <a href="<?= \Includes\Localization::url('packages') ?>" class="btn c-sec br-30 med-d-none"><?= $founderHero_btn ?></a>
     </div>
     <div class="w-60 med-w-100 t-c">
       <div class="rel" style="padding-bottom:56.25%">
@@ -25,7 +25,7 @@
         </iframe>
       </div>
       <small class="d-block mt-10 med-mb-20 tc-acc"><?= $founderHero_note ?></small>
-      <a href="#" target="_blank" class="btn c-sec br-30 d-none med-d-block m-center" style="width:fit-content"><?= $founderHero_btn ?></a>
+      <a href="<?= \Includes\Localization::url('packages') ?>" class="btn c-sec br-30 d-none med-d-block m-center" style="width:fit-content"><?= $founderHero_btn ?></a>
     </div>
   </div>
 </section>
@@ -254,7 +254,7 @@
 
   <div class="mw-1280 t-c d-flex fd-col ai-center jc-center pt-200 pb-200 small-pt-100 small-pb-100">
     <h2 class="h1 tc-0 m-center mb-40 small-mb-20"><?= $founderBanner ?></h2>
-    <a href="<?= \Includes\Localization::url('packages') ?>" target="_blank" class="btn big c-pri br-50 m-0"><?= $founderBannerCta ?></a>
+    <a href="<?= \Includes\Localization::url('packages') ?>" class="btn big c-pri br-50 m-0"><?= $founderBannerCta ?></a>
   </div>
 </section>
 
