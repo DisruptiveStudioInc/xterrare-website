@@ -78,7 +78,7 @@
           <?php endforeach; ?>
         </ul>
         <div class="w-100 t-l med-t-c">
-          <a href="<?= $founder_register ?>" target="_blank" class="btn c-pri br-50">
+          <a href="<?= $founder_register ?>" class="btn c-pri br-50">
             <?= $Btn_packages ?>
           </a>
         </div>
@@ -112,7 +112,7 @@
           <?php endforeach; ?>
         </ul>
         <div class="w-100 t-l med-t-c">
-          <a href="<?= $founder_register ?>" target="_blank" class="btn c-sec br-50">
+          <a href="<?= $founder_register ?>" class="btn c-sec br-50">
             <?= $Btn_packages ?>
           </a>
         </div>
@@ -148,7 +148,7 @@
     </table>
 
     <div class="w-100 t-c">
-      <a href="<?= $founder_register ?>" target="_blank" class="btn big c-sec br-50">
+      <a href="<?= $founder_register ?>" class="btn big c-sec br-50">
         <?= $Btn_packages ?>
       </a>
     </div>
@@ -224,7 +224,7 @@
         </ul>
       </div>
       <div class="w-100 med-t-c">
-        <a href="<?= $founder_register ?>" target="_blank" class="btn c-sec br-50">
+        <a href="<?= $founder_register ?>" class="btn c-sec br-50">
           <?= $Btn_packages ?>
         </a>
       </div>

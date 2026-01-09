@@ -180,11 +180,21 @@
             ?>
             <div class="d-none med-d-block mt-20">
               <div class="mb-10">
-                <a href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?= $Menu_log; ?></a>
+                <a
+                  href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>"
+                  target="<?= (isset($floatBtn) && $floatBtn !== 'default') ? '_self' : '_blank'; ?>"
+                  class="btn c-ter br-30 small-w-100">
+                    <?= $Menu_log; ?>
+                </a>
               </div>
               <?php if($user_replica || (isset($floatBtn) && $floatBtn !== 'default')): ?>
                 <div>
-                  <a href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register ?>" target="_blank" class="btn c-sec br-30 small-w-100"><?= $Menu_reg; ?></a>
+                  <a
+                    href="<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register ?>"
+                    target="<?= (isset($floatBtn) && $floatBtn !== 'default') ? '_self' : '_blank'; ?>"
+                    class="btn c-sec br-30 small-w-100">
+                    <?= $Menu_reg; ?>
+                  </a>
                 </div>
               <?php endif; ?>
             </div>
@@ -193,9 +203,19 @@
 
         <div class="jc-center ai-center">
           <div class="btns m-0 g-10 med-d-none">
-            <a href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>' target="_blank" class="btn c-ter br-30"><?= $Menu_log; ?></a>
+            <a
+              href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_buy : $Login; ?>'
+              target="<?= (isset($floatBtn) && $floatBtn !== 'default') ? '_self' : '_blank'; ?>"
+              class="btn c-ter br-30">
+              <?= $Menu_log; ?>
+            </a>
             <?php if($user_replica || (isset($floatBtn) && $floatBtn !== 'default')): ?>
-              <a href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register; ?>' target="_blank" class="btn c-sec br-30"><?= $Menu_reg; ?></a>
+              <a
+                href='<?= (isset($floatBtn) && $floatBtn !== 'default') ? $founder_register : $Register; ?>'
+                target="<?= (isset($floatBtn) && $floatBtn !== 'default') ? '_self' : '_blank'; ?>"
+                class="btn c-sec br-30">
+                <?= $Menu_reg; ?>
+              </a>
             <?php endif; ?>
           </div>
           <div class="hamburguer">
