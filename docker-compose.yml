@@ -1,6 +1,6 @@
 services:
   xterrare-website:
-    image: trafex/php-nginx
+    image: trafex/php-nginx@sha256:8d3e7f61084705d450cb2f80cdc980ca1603fdd0e904ab43749c6d87831b3cf3
     container_name: xterrare-website
     restart: unless-stopped
     volumes:
